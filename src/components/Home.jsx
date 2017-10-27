@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import loadImage from 'image-promise';
 import $ from 'jquery';
 import {Helmet} from "react-helmet";
+import FontAwesome from 'react-fontawesome';
 
 class Home extends Component {
   constructor(props) {
@@ -45,10 +46,10 @@ class Home extends Component {
     return (
       <div id="home">
         {/* Topics */}
-        <header className="title align-center">
+        <header className="title align-center center mw8 ph4">
           <h1 className="mw7 fw5">Hello, my name is Mark. <br className="db-l dn" /><span className="fw3"> I’m a UX Designer / Engineer, currently designing and building delightful experiences at <a href="https://www.mozilla.org/" target="_blank" className="no-underline fw5 link near-black hover-gold">Mozilla</a>.</span></h1>
         </header>
-        <section>
+        <section className="center mw8 ph4">
           <div className="cf">
             <div className="fl w-100 w-50-l">
               <Link to='/project-zerda'>
@@ -103,7 +104,15 @@ class Home extends Component {
               </Link>
             </div>
           </div>
-          
+        </section>
+        <section className="mv2 pv4">
+          <a href="https://www.youwenliang.com/work" target="_blank" className="near-black no-underline">
+            <p className="ttu tracked f12 fw7 tc">MORE</p>
+            <h4 className="tc fw2 f4">View Past Works</h4>
+            <h4 className="tc">
+                <FontAwesome name='long-arrow-right' className="gold" />
+            </h4>
+          </a>
         </section>
       </div>
     );

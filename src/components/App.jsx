@@ -25,7 +25,9 @@ class App extends Component {
               </svg>
             </div>
           </Link>
-          <div className="f6"><FontAwesome name='envelope-o' className="mr1" />mliang@mozilla.com</div>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mliang@mozilla.com" target="_blank" className="no-underline">
+            <div className="f6 near-black link"><FontAwesome name='envelope-o' className="mr1" />mliang@mozilla.com</div>
+          </a>
         </nav>
         <Main/>
         <Footer/>

@@ -38,6 +38,9 @@ body {
 .h5 {
   height: 24rem;
 }
+.f12 {
+  font-size: 12px;
+}
 
 a {
   -moz-user-select: none;
@@ -76,7 +79,21 @@ nav {
 
 .project:hover .project-image{
   opacity: .4;
+  transform: scale(1.1);
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@media screen and (max-width: 479px) {
+  .project:hover .project-image{
+    opacity: 1;
+    transform: scale(1);
+    transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .project:hover .project-text {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+    transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+  }
 }
 
 .project-text {
