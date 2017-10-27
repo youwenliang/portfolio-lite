@@ -7,7 +7,7 @@ var pageURL = "firefox-send";
 class TopicB extends Component {
   componentDidMount() {
     console.log(pageURL);
-    document.title = "Firefox Send";
+    document.title = "Mark Liang - Firefox Send";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
 

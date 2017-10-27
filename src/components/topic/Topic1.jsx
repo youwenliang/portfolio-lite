@@ -7,7 +7,7 @@ var pageURL = "project-zerda";
 class TopicA extends Component {
   componentDidMount() {
     console.log(pageURL);
-    document.title = "Project Zerda";
+    document.title = "Mark Liang - Project Zerda";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
 

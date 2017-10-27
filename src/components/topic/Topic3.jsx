@@ -7,7 +7,7 @@ var pageURL = "firefox-screenshots";
 class TopicC extends Component {
   componentDidMount() {
     console.log(pageURL);
-    document.title = "Firefox Screenshots";
+    document.title = "Mark Liang - Firefox Screenshots";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
 

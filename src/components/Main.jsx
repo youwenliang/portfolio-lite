@@ -23,7 +23,7 @@ class Main extends Component {
 
   render() {
     return (
-      <main className="center mw8 ph4">
+      <main className="center mw8 ph4 pb5">
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/project-zerda' component={Topic1} />

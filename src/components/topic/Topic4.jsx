@@ -7,7 +7,7 @@ var pageURL = "firefoxos-tv";
 class TopicD extends Component {
   componentDidMount() {
     console.log(pageURL);
-    document.title = "FirefoxOS TV";
+    document.title = "Mark Liang - FirefoxOS TV";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
 
