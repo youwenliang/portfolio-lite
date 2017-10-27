@@ -10,7 +10,6 @@ class Home extends Component {
   }
   componentDidMount() {
     console.log('Home');
-    document.title = "Home";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
 
@@ -45,10 +44,15 @@ class Home extends Component {
     return (
       <div id="home">
         {/* Topics */}
-        <Link to='/firefox-send'>Send</Link>
-        <Link to='/firefox-screenshots'>Screenshots</Link>
-        <Link to='/firefoxos-tv'>TV</Link>
-        <Link to='/project-zerda'>Zerda</Link>
+        <header>
+          
+        </header>
+        <section>
+          <Link to='/firefox-send'>Send</Link>
+          <Link to='/firefox-screenshots'>Screenshots</Link>
+          <Link to='/firefoxos-tv'>TV</Link>
+          <Link to='/project-zerda'>Zerda</Link>
+        </section>
       </div>
     );
   }

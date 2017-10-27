@@ -18,12 +18,17 @@
     "react-scripts": "1.0.14"
   },
   "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "css": "tachyons src/styles/main.css > src/index.css --minify",
+    "prestart": "npm run css",
+    "prebuild": "npm run css"
   },
   "homepage": "http://lite.youwenliang.com"
 }

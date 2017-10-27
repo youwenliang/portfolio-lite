@@ -5,7 +5,10 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-      <Link to='/'>Home</Link>
+        <div className="center mw8 ph4 space-between">
+          <Link to='/'><div>mark.</div></Link>
+          <div>©2017 All rights Reserved.</div>
+        </div>
       </footer>
     );
   }
