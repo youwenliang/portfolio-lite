@@ -12,6 +12,7 @@ class TopicD extends Component {
     document.title = "Mark Liang - FirefoxOS TV";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
+    document.body.classList.remove('home');
 
     /* Preload Image */
     var images  = [];
@@ -56,6 +57,11 @@ class TopicD extends Component {
           <div id="intro" className="mw7 ph5-l ph0">
             <h1>Independent and personalizable Web experience on Smart TVs.</h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent </p>
+            <p className="o-40 fw5 f6">• Roles: Prototyper / Front-End Development<br/>• Skills: HTML/CSS, Javascript, User Testing, UX/UI</p>
+            <div className="mt4 pt3">
+              <a href="#" target="_blank" className="br1 near-black button no-underline f12 fw7 mr3 pa3 bg-red-1 hover-bg-red-1 white">Launch Prototype</a>
+              <a href="#" target="_blank" className="br1 near-black button no-underline f12 fw7 pa3 bg-moon-gray bg-animate hover-bg-light-silver">View Project on Github</a>
+            </div>
           </div>
           <hr className="mv5-ns mv4 o-30" />
           <div id="process" className="mw7 ph5-l ph0">
@@ -75,14 +81,14 @@ class TopicD extends Component {
         </section>
         <section className="mv2 pv4 hideme hidediv">
           <div className="center mw8 space-between ph4">
-            <Link to='/project-zerda' className="near-black no-underline">
+            <Link to='/project-zerda' className="near-black no-underline hover-move">
               <p className="ttu tracked f12 fw7 tl">Previous</p>
               <h4 className="tl fw2 f4">Project Zerda</h4>
               <h4 className="tl">
                   <FontAwesome name='long-arrow-left' className="gold" />
               </h4>
             </Link>
-            <Link to='/firefox-screenshots' className="near-black no-underline">
+            <Link to='/firefox-screenshots' className="near-black no-underline hover-move">
               <p className="ttu tracked f12 fw7 tr">Next</p>
               <h4 className="tr fw2 f4">Firefox Screenshots</h4>
               <h4 className="tr">

@@ -14,6 +14,7 @@ class Home extends Component {
     document.title = "Mark Liang - Interaction Designer";
     document.getElementById('loading').classList.remove('fade');
     document.body.classList.add('ds');
+    document.body.classList.add('home');
 
     /* Preload Image */
     var images  = [];
@@ -60,7 +61,7 @@ class Home extends Component {
                     <img src="images/800x600.png"/>
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
-                    <p className="white ttu tracked">firefox screenshots / 2016-2017</p>
+                    <p className="white ttu tracked fw5">firefox screenshots / 2016-2017</p>
                     <h3 className="white ma0">Take, save, and share screenshots without leaving Firefox.</h3>
                   </div>
                 </div>
@@ -73,7 +74,7 @@ class Home extends Component {
                     <img src="images/800x600.png"/>
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
-                    <p className="white ttu tracked">firefox send / 2017</p>
+                    <p className="white ttu tracked fw5">firefox send / 2017</p>
                     <h3 className="white ma0">Upload and encrypt large files to share online with Firefox Send.</h3>
                   </div>
                 </div>
@@ -86,7 +87,7 @@ class Home extends Component {
                     <img src="images/800x600.png"/>
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
-                    <p className="white ttu tracked">project zerda / 2017</p>
+                    <p className="white ttu tracked fw5">project zerda / 2017</p>
                     <h3 className="white ma0">A lightweight and data saving browser for emerging markets.</h3>
                   </div>
                 </div>
@@ -99,7 +100,7 @@ class Home extends Component {
                     <img src="images/800x600.png"/>
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
-                    <p className="white ttu tracked">firefoxos tv / 2015</p>
+                    <p className="white ttu tracked fw5">firefoxos tv / 2015</p>
                     <h3 className="white ma0">Independent and personalizable Web experience on Smart TVs.</h3>
                   </div>
                 </div>
@@ -108,7 +109,7 @@ class Home extends Component {
           </div>
         </section>
         <section className="mv2 pv4 hideme hidediv">
-          <a href="https://www.youwenliang.com/work" target="_blank" className="near-black no-underline">
+          <a href="https://www.youwenliang.com/work" target="_blank" className="near-black no-underline hover-move">
             <p className="ttu tracked f12 fw7 tc">MORE</p>
             <h4 className="tc fw2 f4">View Past Works</h4>
             <h4 className="tc">

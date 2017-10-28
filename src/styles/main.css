@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-size: 16px;
   min-height: 100%;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   letter-spacing: .025em;
   color: #1b1b1c;
   background-color: #f5f5f5;
@@ -39,6 +39,16 @@ p {
     font-size: 24px;
     line-height: 1.40625;
   }
+}
+
+.hover-move {
+  position: relative;
+  top: 0px;
+  transition: all .8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hover-move:hover {
+  top: -5px;
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /*overrides*/
@@ -167,11 +177,17 @@ nav.white a {
 .bg-blue-1 {
   background-color: #0095FB;
 }
+.hover-bg-blue-1:hover {
+  background-color: #0077C9;
+}
 .pink-1 {
   color: #FF807E;
 }
 .bg-pink-1 {
   background-color: #FF807E;
+}
+.hover-bg-pink-1:hover {
+  background-color: #CC6665;
 }
 .red-1 {
   color: #F00086;
@@ -179,14 +195,29 @@ nav.white a {
 .bg-red-1 {
   background-color: #F00086;
 }
+.hover-bg-red-1:hover {
+  background-color: #C0006B;
+}
 .green-1 {
   color: #009EC2;
 }
 .bg-green-1 {
   background-color: #009EC2;
 }
+.hover-bg-green-1:hover {
+  background-color: #017E9B;
+}
 .fill-white {
   fill: white;
+}
+.bg-action {
+  background-color: #408BC9;
+}
+.action {
+  color: #408BC9;
+}
+.button {
+  transition: background-color .15s ease-in-out;
 }
 
 .logo {
@@ -257,5 +288,10 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 100px;
+}
+
+.home .logo-footer {
+  opacity: 0;
+  pointer-events: none;
 }
