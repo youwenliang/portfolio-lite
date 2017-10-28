@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <div id="loading"></div>
-        <nav className="center mw8 ph4 pt4 space-between">
+        <nav id="nav" className="center mw8 ph4 pt4 space-between">
           <Link to='/'>
             <div className="logo">
               <svg xmlns="http://www.w3.org/2000/svg" width="71.33" height="71.33" viewBox="0 0 71.33 71.33">
@@ -25,8 +25,8 @@ class App extends Component {
               </svg>
             </div>
           </Link>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mliang@mozilla.com" target="_blank" className="no-underline">
-            <div className="f6 near-black link"><FontAwesome name='envelope-o' className="mr1" />mliang@mozilla.com</div>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mliang@mozilla.com" target="_blank" className="no-underline near-black ">
+            <div className="f6 link"><FontAwesome name='envelope-o' className="mr1" />mliang@mozilla.com</div>
           </a>
         </nav>
         <Main/>

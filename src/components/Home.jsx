@@ -17,21 +17,23 @@ class Home extends Component {
 
     /* Preload Image */
     var images  = [];
+    images.push('images/800x600.png');
     loadImage(images)
     .then(function (allImgs) {
+      document.getElementById('nav').classList.remove('white');
       setTimeout(function(){        
         document.getElementById('loading').classList.add('fade');
         document.body.classList.remove('ds');
         setTimeout(function(){
           $('#home .hidediv').each(function(i){
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/5;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){
               $(this).removeClass('hideme');
             }  
           });
           $('.fadein').removeClass('fadein');
-        }, 400);
+        }, 200);
         console.log(allImgs.length, 'images loaded!', allImgs);
       }, 400);
     })
@@ -47,19 +49,19 @@ class Home extends Component {
       <div id="home">
         {/* Topics */}
         <header className="title align-center center mw8 ph4">
-          <h1 className="mw7 fw5">Hello, my name is Mark. <br className="db-l dn" /><span className="fw3"> I’m a UX Designer / Engineer, currently designing and building delightful experiences at <a href="https://www.mozilla.org/" target="_blank" className="no-underline fw5 link near-black hover-gold">Mozilla</a>.</span></h1>
+          <h1 className="mw7 fw5 hideme hidediv">Hello, my name is Mark. <br className="db-l dn" /><span className="fw3"> I’m a UX Designer / Engineer, currently designing and building delightful experiences at <a href="https://www.mozilla.org/" target="_blank" className="no-underline fw5 link near-black hover-gold">Mozilla</a>.</span></h1>
         </header>
         <section className="center mw8 ph4">
-          <div className="cf">
+          <div className="cf hideme hidediv">
             <div className="fl w-100 w-50-l">
-              <Link to='/project-zerda'>
-                <div className="bg-pink-1 project relative">
+              <Link to='/firefox-screenshots'>
+                <div className="bg-green-1 project relative">
                   <figure className="ma0 project-image">
                     <img src="images/800x600.png"/>
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
-                    <p className="white ttu tracked">project zerda / 2017</p>
-                    <h3 className="white ma0">Project Zerda</h3>
+                    <p className="white ttu tracked">firefox screenshots / 2016-2017</p>
+                    <h3 className="white ma0">Take, save, and share screenshots without leaving Firefox.</h3>
                   </div>
                 </div>
               </Link>
@@ -72,20 +74,20 @@ class Home extends Component {
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
                     <p className="white ttu tracked">firefox send / 2017</p>
-                    <h3 className="white ma0">Firefox Send lets you upload and encrypt large files to share online.</h3>
+                    <h3 className="white ma0">Upload and encrypt large files to share online with Firefox Send.</h3>
                   </div>
                 </div>
               </Link>
             </div>
             <div className="fl w-100 w-50-l">
-              <Link to='/firefox-screenshots'>
-                <div className="bg-green-1 project relative">
+              <Link to='/project-zerda'>
+                <div className="bg-pink-1 project relative">
                   <figure className="ma0 project-image">
                     <img src="images/800x600.png"/>
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
-                    <p className="white ttu tracked">firefox screenshots / 2016-2017</p>
-                    <h3 className="white ma0">Firefox Screenshots</h3>
+                    <p className="white ttu tracked">project zerda / 2017</p>
+                    <h3 className="white ma0">A lightweight and data saving browser for emerging markets.</h3>
                   </div>
                 </div>
               </Link>
@@ -98,14 +100,14 @@ class Home extends Component {
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
                     <p className="white ttu tracked">firefoxos tv / 2015</p>
-                    <h3 className="white ma0">FirefoxOS TV</h3>
+                    <h3 className="white ma0">Independent and personalizable Web experience on Smart TVs.</h3>
                   </div>
                 </div>
               </Link>
             </div>
           </div>
         </section>
-        <section className="mv2 pv4">
+        <section className="mv2 pv4 hideme hidediv">
           <a href="https://www.youwenliang.com/work" target="_blank" className="near-black no-underline">
             <p className="ttu tracked f12 fw7 tc">MORE</p>
             <h4 className="tc fw2 f4">View Past Works</h4>
