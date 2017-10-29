@@ -171,6 +171,16 @@ nav.white a {
   margin-top: -300px;
 }
 
+@media screen and (max-width: 479px) {
+  .project-header {
+    height: 16rem !important;
+  }
+  .project-cover {
+    margin-top: -240px !important;
+  }
+}
+
+
 .blue-1 {
   color: #0095FB;
 }

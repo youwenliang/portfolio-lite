@@ -49,16 +49,16 @@ class Home extends Component {
     return (
       <div id="home">
         {/* Topics */}
-        <header className="title align-center center mw8 ph4">
-          <h1 className="mw7 fw5 hideme hidediv">Hello, my name is Mark. <br className="db-l dn" /><span className="fw3"> I’m a UX Designer / Engineer, currently designing and building delightful experiences at <a href="https://www.mozilla.org/" target="_blank" className="no-underline fw5 link near-black hover-gold">Mozilla</a>.</span></h1>
+        <header className="title align-center center mw8 ph4-ns ph3">
+          <h1 className="mw7 fw5 hideme hidediv ph2"><span>Hello, my name is Mark.</span><br className="db-l dn" /><span className="fw3"> I love crafting elegant experiences and bringing ideas to life with code, currently designing products and experiments at <a href="https://www.mozilla.org/" target="_blank" className="no-underline fw5 link near-black hover-gold">Mozilla Firefox</a>.</span></h1>
         </header>
-        <section className="center mw8 ph4">
+        <section className="center mw8 ph4-ns ph3">
           <div className="cf hideme hidediv">
-            <div className="fl w-100 w-50-l">
+            <div className="fl w-100 w-50-l pa2">
               <Link to='/firefox-screenshots'>
                 <div className="bg-green-1 project relative">
                   <figure className="ma0 project-image">
-                    <img src="images/800x600.png"/>
+                    <img src="images/firefox-screenshots-cover.png"/>
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
                     <p className="white ttu tracked fw5">firefox screenshots / 2016-2017</p>
@@ -67,11 +67,11 @@ class Home extends Component {
                 </div>
               </Link>
             </div>
-            <div className="fl w-100 w-50-l">
+            <div className="fl w-100 w-50-l pa2">
               <Link to='/firefox-send'>
                 <div className="bg-blue-1 project relative">
                   <figure className="ma0 project-image">
-                    <img src="images/800x600.png"/>
+                    <img src="images/firefox-send-cover.png"/>
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
                     <p className="white ttu tracked fw5">firefox send / 2017</p>
@@ -80,11 +80,11 @@ class Home extends Component {
                 </div>
               </Link>
             </div>
-            <div className="fl w-100 w-50-l">
+            <div className="fl w-100 w-50-l pa2">
               <Link to='/project-zerda'>
                 <div className="bg-pink-1 project relative">
                   <figure className="ma0 project-image">
-                    <img src="images/800x600.png"/>
+                    <img src="images/project-zerda-cover.png"/>
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
                     <p className="white ttu tracked fw5">project zerda / 2017</p>
@@ -93,11 +93,11 @@ class Home extends Component {
                 </div>
               </Link>
             </div>
-            <div className="fl w-100 w-50-l">
+            <div className="fl w-100 w-50-l pa2">
               <Link to='/firefoxos-tv'>
                 <div className="bg-red-1 project relative">
                   <figure className="ma0 project-image">
-                    <img src="images/800x600.png"/>
+                    <img src="images/firefoxos-tv-cover.png"/>
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
                     <p className="white ttu tracked fw5">firefoxos tv / 2015</p>

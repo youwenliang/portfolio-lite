@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <div className="center mw8 ph4 space-between">
+        <div className="center mw8 ph4-ns ph3 space-between">
           <Link to='/'>
             <div className="logo logo-footer">
               <svg xmlns="http://www.w3.org/2000/svg" width="71.33" height="71.33" viewBox="0 0 71.33 71.33">
@@ -20,7 +20,7 @@ class Footer extends Component {
               </svg>
             </div>
           </Link>
-          <div className="o-50 f6">©2017 Design by Mark Liang.</div>
+          <div className="o-50 f6 ph2">©2017 Design by Mark Liang.</div>
         </div>
       </footer>
     );
