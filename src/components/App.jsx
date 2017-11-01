@@ -1,4 +1,3 @@
-/*global FB*/
 import React, { Component } from 'react';
 import Main from './Main';
 import Footer from './Footer';
@@ -25,7 +24,7 @@ class App extends Component {
               </svg>
             </div>
           </Link>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mliang@mozilla.com" target="_blank" className="no-underline near-black ">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mliang@mozilla.com" target="_blank"  rel="noopener noreferrer" className="no-underline near-black ">
             <div className="f6 link ph2"><FontAwesome name='envelope-o' className="mr1" />mliang@mozilla.com</div>
           </a>
         </nav>

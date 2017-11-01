@@ -1,6 +1,5 @@
-/*global FB*/
 import React, { Component } from 'react';
-import { Switch, Route, Redirect, Link } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Home from './Home';
 import Topic1 from './topic/Topic1';
@@ -31,7 +30,7 @@ class Main extends Component {
   componentDidUpdate(prevProps, prevState) {
     this.updateActions();
   }
-
+  
   render() {
     return (
       <main>

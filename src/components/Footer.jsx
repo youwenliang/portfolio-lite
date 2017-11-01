@@ -6,8 +6,8 @@ class Footer extends Component {
     return (
       <footer>
         <div className="center mw8 ph4-ns ph3 space-between">
-          <Link to='/'>
-            <div className="logo logo-footer">
+          <Link to='/' className="logo-footer">
+            <div className="logo">
               <svg xmlns="http://www.w3.org/2000/svg" width="71.33" height="71.33" viewBox="0 0 71.33 71.33">
                 <g>
                   <path opacity=".51" d="M60.74 35.664H27.47c-.15.265-.245.57-.245.83v24.02c0 .457.294.608.654.333l32.45-24.684c.153-.118.298-.298.41-.5z"/>

@@ -61,6 +61,10 @@ p {
 .f12 {
   font-size: 12px;
 }
+.lh-large {
+  line-height: 2;
+}
+
 
 a {
   -moz-user-select: none;
@@ -292,6 +296,14 @@ nav.white a {
 
 img {
   vertical-align: top;
+}
+
+.shadow {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: rgba(0,0,0,.2) 0 5px 10px;
+  margin: 11px;
+  max-width: calc(100% - 22px) !important;
 }
 
 footer {

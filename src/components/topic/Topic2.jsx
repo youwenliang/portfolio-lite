@@ -3,12 +3,13 @@ import loadImage from 'image-promise';
 import { Link } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 import $ from 'jquery';
+import ImageZoom from 'react-medium-image-zoom';
 
 var pageURL = "firefox-send";
 var pageTitle = "Firefox Send";
 var projectColor = "blue";
 
-class TopicA extends Component {
+class TopicB extends Component {
   componentDidMount() {
     console.log(pageURL);
     document.title = "Mark Liang - " + pageTitle;
@@ -18,6 +19,10 @@ class TopicA extends Component {
 
     /* Preload Image */
     var images  = [];
+    for(var i = 0; i < 7; i++)
+    images.push('/images/'+pageURL+'/image-'+i+'.png');
+    for(var j = 7; i < 9; i++)
+    images.push('/images/'+pageURL+'/image-'+j+'.gif');
     loadImage(images)
     .then(function (allImgs) {
       setTimeout(function(){        
@@ -44,6 +49,20 @@ class TopicA extends Component {
       console.info(err.loaded);
     });
   }
+  more(a, b) {
+    var link = a.replace(' ', '-').toLowerCase();
+    var direction = (b === "next") ? 'right' : 'left';
+    return(
+      <Link to={'/'+link} className="near-black no-underline hover-move ph2">
+        <p className="ttu tracked f12 fw7 tl">{b}</p>
+        <h4 className="tl fw3 f4">{a}</h4>
+        <h4 className="tl">
+            <FontAwesome name={'long-arrow-'+direction} className="gold" />
+        </h4>
+      </Link>
+    );
+  }
+
   render() {
     return (
       <div id={pageURL}>
@@ -51,54 +70,75 @@ class TopicA extends Component {
         </header>
         <div className="center mw8 ph4-ns ph3 project-cover">
           <figure className="ma0 hideme hidediv ph2">
-            <img src={"images/"+pageURL+"-cover.png"}/>
+            <img src={"images/"+pageURL+"-cover.png"} alt={pageTitle}/>
           </figure>
         </div>
         <section className="center mw8 ph4-ns ph3">
           <div className="mt5-ns mt4 ph2">
             <hr className={"dash bg-"+projectColor+"-1"} /><span className="f12 ttu ml3 fw7">{pageTitle}</span>
-            <div id="intro" className="mw7 ph5-l ph0">
-              <h1>Take, save, and share screenshots without leaving Firefox.</h1>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent </p>
-              <p className="o-40 fw5 f6">• Roles: Prototyper / Front-End Development<br/>• Skills: HTML/CSS, Javascript, User Testing, UX/UI</p>
+            <article id="intro" className="mw7 ph5-l ph0">
+              <h1>Upload and encrypt large files to share online with Firefox Send.</h1>
+              <p>Firefox Send is a file transfer service that automatically deletes files from the server after one download or 24 hours. It is the first Test Pilot "Web" experiment coming up this August, which means there's no need to install add-ons, and you can use it across different browsers and devices. </p>
+              <p className="o-40 fw5 f6">• Roles: UX Designer/Engineer <br/>• Skills: Sketch, InVision, HTML/CSS, Javascript</p>
               <div className="mt4 pt3">
-                <a href="https://screenshots.firefox.com/" target="_blank" className={"db dib-ns tl-ns tc mb3 br1 near-black button no-underline f12 fw7 mr3-ns pa3 bg-"+projectColor+"-1 hover-bg-"+projectColor+"-1 white"}>Launch Website</a>
-                <a href="https://github.com/mozilla-services/screenshots/" target="_blank" className="db dib-ns tl-ns tc mb3 br1 near-black button no-underline f12 fw7 pa3 bg-moon-gray bg-animate hover-bg-light-silver">View Project on Github</a>
+                <a href="https://send.firefox.com/" target="_blank" rel="noopener noreferrer" className={"db dib-ns tl-ns tc mb3 br1 near-black button no-underline f12 fw7 mr3-ns pa3 bg-"+projectColor+"-1 hover-bg-"+projectColor+"-1 white"}>Launch Website</a>
+                <a href="https://testpilot.firefox.com/experiments/send" target="_blank" rel="noopener noreferrer" className="db dib-ns tl-ns tc mb3 br1 near-black button no-underline f12 fw7 pa3 bg-moon-gray bg-animate hover-bg-light-silver">Visit Experiment Page</a>
               </div>
-            </div>
+            </article>
             <hr className="mv5-ns mv4 o-30" />
-            <div id="process" className="mw7 ph5-l ph0">
-              <h2>Design Process</h2>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent </p>
-            </div>
-            <figure className="mv5-ns mv4 mh0 hideme hidediv">
-              <img src="images/800x600.png"/>
+            <article id="process" className="mw7 ph5-l ph0">
+              <h2>Design Process</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
+              <p>Our lead UX designer Sevaan provided us some early wireframes as a starting point to discuss how we are going to visualize the interactions. The user flow seems simple, just uploading and downloading files, so we put our focus on how the interface can address the simpleness of uploading files, how to take care of some error cases, and how to help users make sense of the whole process so that they will be willing to trust the service.</p>
+            </article>
+            <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-6.png'}}/>
+              <p className="tc f12 o-60">Early wireframes to establish to user interactions.</p>
             </figure>
-            <div id="process" className="mw7 ph5-l ph0">
-              <h2>Final Designs</h2>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent </p>
+            <article className="mw7 ph5-l ph0">
+              <p>After establishing the UX spec with the team, we started several visual explorations on how the interface should look and behave. We also considered the responsive design for our interfaces since Firefox Send should work across all devices.</p>
+            </article>
+            <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-4.png'}}/>
+              <p className="tc f12 o-60">Exploring different visual ideas.</p>
+            </figure>
+            <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-5.png'}}/>
+              <p className="tc f12 o-60">Designing responsive interfaces.</p>
+            </figure>
+            <article id="final" className="mw7 ph5-l ph0">
+              <h2>Final Designs</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
+              <p>For the final design, we focused on clarifying the steps of uploading and downloading files, and also reduced the chances of people not knowing what to do on error pages. We made a lot effort into marking Firefox Send support all browsers and different operating systems, and also localized all the strings to support users in different countries (which requires us to rethink about some of the components because of the string length). Before releasing this experiment, I also jumped in to help push the pixels on the front-end part to make sure all the components have a consistent look and feel. Our visual designer did a really good job providing a clean and friendly looks for the interfaces!</p>
+            </article>
+            <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-7.gif', className: 'shadow'}}/>
+              <p className="tc f12 o-60">Dragging Files to upload.</p>
+            </figure>
+            <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-8.gif', className: 'shadow'}}/>
+              <p className="tc f12 o-60">Downloading and decrypting files through a unique link.</p>
+            </figure>
+            <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-3.png'}}/>
+              <p className="tc f12 o-60">Removing files from your history.</p>
+            </figure>
+            <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-0.png'}}/>
+              <p className="tc f12 o-60">File expired if someone has already downloaded it.</p>
+            </figure>
+            <div id="next" className="mw7 ph5-l ph0">
+              <h2>What's Next</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
+              <p>Since it's launch, we got lots of article talking about Firefox Send. There's also a vast amount of feedback and over one thousand upvotes on Product Hunt (<a href="https://www.producthunt.com/posts/send-by-firefox" target="_blank" rel="noopener noreferrer">https://www.producthunt.com/posts/send-by-firefox</a>). To continue improving Firefox Send, we collected all the input and compiled into a feature backlog for us to understand what our users think. We then prioritized the feature requests and brought together our design team to sketch up some ideas. One of the most requested features is to add a password to your files, which will roll out soon!</p>
             </div>
-            <figure className="mv5-ns mv4 mh0 hideme hidediv">
-              <img src="images/800x600.png"/>
+            <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-1.png'}}/>
+              <p className="tc f12 o-60">Sending files with password protection.</p>
             </figure>
           </div>
         </section>
         <section className="mv2 pv4 hideme hidediv">
           <div className="center mw8 space-between ph4-ns ph3">
-            <Link to='/firefox-screenshots' className="near-black no-underline hover-move ph2">
-              <p className="ttu tracked f12 fw7 tl">Previous</p>
-              <h4 className="tl fw2 f4">Firefox Screenshots</h4>
-              <h4 className="tl">
-                  <FontAwesome name='long-arrow-left' className="gold" />
-              </h4>
-            </Link>
-            <Link to='/project-zerda' className="near-black no-underline hover-move ph2">
-              <p className="ttu tracked f12 fw7 tr">Next</p>
-              <h4 className="tr fw2 f4">Project Zerda</h4>
-              <h4 className="tr">
-                  <FontAwesome name='long-arrow-right' className="gold" />
-              </h4>
-            </Link>
+            {this.more('Firefox Screenshots', 'previous')}
+            {this.more('Project Zerda', 'next')}
           </div>
         </section>
       </div>
@@ -106,4 +146,4 @@ class TopicA extends Component {
   }
 }
 
-export default TopicA;
+export default TopicB;
