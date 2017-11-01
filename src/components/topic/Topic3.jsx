@@ -91,44 +91,40 @@ class TopicC extends Component {
             </div>
             <hr className="mv5-ns mv4 o-30" />
             <div id="process" className="mw7 ph5-l ph0">
-              <h2>Design Process</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
-              <p>Validate ideas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent </p>
+              <h2>Concepting</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
+              <p>During the concepting stage, our team came up with several themes around how to help users save cellular data. One of the ideas is to let users subscribe to their frequently visited websites. The browser will automatically download the contents of the subscribed websites when a user is using WiFi, and then the user will be able to view those websites offline without using cellular data.</p>
             </div>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-2.png'}}/>
-              <p className="tc f12 o-60">Wireframes for building prototype.</p>
+              <p className="tc f12 o-60">Wireframes for building the prototype.</p>
             </figure>
             <div id="interactions" className="mw7 ph5-l ph0">
-              <h2>Interactions</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent </p>
+              <h2>User Tasks</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
+              <p>To validate our ideas, we need to learn from the users when they are interacting with the prototype. We listed out several key user flows to test if users can understand the concept, including a task to explain the onboarding information, a task to follow different websites, and a task to revisit the websites they followed.</p>
               <figure className="mt5-ns mt4 mh0 hideme hidediv tc bg-white pv4">
                 <ImageZoom image={{src: 'images/'+pageURL+'/image-3.gif', className: 'shadow mobile'}}/>
               </figure>
-              <p className="tc f12 o-60">Onboarding about how to "follow" websites. (static)</p>
-              <figure className="mt5-ns mt4 mh0 hideme hidediv tc bg-white pv4">
-                <ImageZoom image={{src: 'images/'+pageURL+'/image-7.gif', className: 'shadow mobile'}}/>
-              </figure>
-              <p className="tc f12 o-60">Single hand experience to access menu panel. (gif)</p>
+              <p className="tc f12 o-60">Onboarding about how to "follow" websites.</p>
               <figure className="mt5-ns mt4 mh0 hideme hidediv tc bg-white pv4">
                 <ImageZoom image={{src: 'images/'+pageURL+'/image-6.gif', className: 'shadow mobile'}}/>
               </figure>
-              <p className="tc f12 o-60 mb5-l mb4">Followed sites will be added to your homepage. (gif)</p>
+              <p className="tc f12 o-60 mb5-l mb4">Followed sites will be added to your homepage.</p>
             </div>
             <div id="prototyping" className="mw7 ph5-l ph0">
-              <h2>Prototyping</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent </p>
+              <h2>Prototyping </h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
+              <p>I've been trying different ways to prototype a browser app, but it seems like the most natural way is to build a stand-alone web app that runs inside a browser, in other words, a fake browser inside a real browser. For this project, I used ReactJS to create a single page application that mimics various behaviors of a browser. Since changing states in a react app is usually in a split second without reloading the pages, I have to simulate loading effects to make the whole experience more natural. With the help of our Indonesia colleague, we got the translation for all the copy strings in the interface, this way I can make a hidden switch to change the language showing in the prototype.</p>
               <figure className="mt5-ns mt4 mh0 hideme hidediv tc bg-white pv4">
                 <ImageZoom image={{src: 'images/'+pageURL+'/image-5.gif', className: 'shadow mobile'}}/>
               </figure>
-              <p className="tc f12 o-60">Mimicking the loading effect. (gif)</p>
+              <p className="tc f12 o-60">Mimicking the page loading effect.</p>
               <figure className="mt5-ns mt4 mh0 hideme hidediv tc bg-white pv4">
                 <ImageZoom image={{src: 'images/'+pageURL+'/image-4.gif', className: 'shadow mobile'}}/>
               </figure>
-              <p className="tc f12 o-60 mb5-l mb4">Localized the strings. (gif)</p>
+              <p className="tc f12 o-60 mb5-l mb4">Switching between Indonesian and English.</p>
             </div>
             <div id="testing" className="mw7 ph5-l ph0">
               <h2>User Testing</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent </p>
+              <p>Our research team visited potential users in Indonesia for two weeks to do field studies and user testing. They put the prototype in front of the participants and see how they perceive this kind of new browsing experience. Through several in-depth interviews, we learned that browsing speed is the most important thing to them. Another thing they care about is the app size due to the limited storage on their mobile phone. They will buy SD card to expand their storage space if needed. Data saving, however, doesn’t reflect in their actions. We will need to re-evalutate if data saving can be an incentive for users to try out Zerda.</p>
             </div>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-1.png', className: 'shadow'}}/>
@@ -136,7 +132,7 @@ class TopicC extends Component {
             </figure>
             <div id="final" className="mw7 ph5-l ph0">
               <h2>Milestone</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
-              <p>After several rounds of research and production, Project Zerda is now officially called "Firefox Rocket"! In October, the Zerda team launched its beta version to the Indonesia market. The goal is to quickly test this new lightweight browser product and validate our hypothesis that there is an opportunity to compete in Indonesia if we can offer a product with the proper product market fit. A lot has evolved since the first prototype, and I'm excited to see more progress on how Firefox can innovate in the emerging markets.</p>
+              <p>After several rounds of research and production, the Zerda team launched its beta version to the Indonesia market and collaborated with the communities to promote this product. Project Zerda is now officially called "Firefox Rocket"! The goal here is to quickly test this new lightweight browser and validate our hypothesis that there is an opportunity to compete in Indonesia if we can offer a product with the proper product market fit. A lot has evolved since the first prototype, and I'm excited to see more progress on how Firefox can innovate in the emerging markets.</p>
             </div>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-0.png'}}/>

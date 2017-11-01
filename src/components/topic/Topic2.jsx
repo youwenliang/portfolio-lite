@@ -127,7 +127,7 @@ class TopicB extends Component {
             </figure>
             <div id="next" className="mw7 ph5-l ph0">
               <h2>What's Next</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
-              <p>Since it's launch, we got lots of article talking about Firefox Send. There's also a vast amount of feedback and over one thousand upvotes on Product Hunt (<a href="https://www.producthunt.com/posts/send-by-firefox" target="_blank" rel="noopener noreferrer">https://www.producthunt.com/posts/send-by-firefox</a>). To continue improving Firefox Send, we collected all the input and compiled into a feature backlog for us to understand what our users think. We then prioritized the feature requests and brought together our design team to sketch up some ideas. One of the most requested features is to add a password to your files, which will roll out soon!</p>
+              <p>Since it's launch, we got lots of articles talking about Firefox Send. There's also a vast amount of feedback and over one thousand upvotes on <a href="https://www.producthunt.com/posts/send-by-firefox" target="_blank" rel="noopener noreferrer">Product Hunt</a>. To continue improving Firefox Send, we collected all the input and compiled into a feature backlog for us to understand what our users think. We then prioritized the feature requests and brought together our design team to sketch up some ideas. One of the most requested features is to add a password to your files, which will roll out soon!</p>
             </div>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-1.png'}}/>
