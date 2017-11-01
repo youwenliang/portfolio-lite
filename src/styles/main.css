@@ -64,6 +64,13 @@ p {
 .lh-large {
   line-height: 2;
 }
+.pointer {
+  cursor: pointer;
+}
+.mobile {
+  max-width: 270px;
+  max-height: 480px;
+}
 
 
 a {
