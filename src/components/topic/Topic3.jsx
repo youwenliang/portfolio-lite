@@ -74,7 +74,7 @@ class TopicC extends Component {
         </header>
         <div className="center mw8 ph4-ns ph3 project-cover">
           <figure className="ma0 hideme hidediv ph2">
-            <img src={"images/"+pageURL+"-cover.png"}/>
+            <img src={"images/"+pageURL+"-cover.png"} alt={pageTitle}/>
           </figure>
         </div>
         <section className="center mw8 ph4-ns ph3">
@@ -124,7 +124,7 @@ class TopicC extends Component {
             </div>
             <div id="testing" className="mw7 ph5-l ph0">
               <h2>User Testing</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
-              <p>Our research team visited potential users in Indonesia for two weeks to do field studies and user testing. They put the prototype in front of the participants and see how they perceive this kind of new browsing experience. Through several in-depth interviews, we learned that browsing speed is the most important thing to them. Another thing they care about is the app size due to the limited storage on their mobile phone. They will buy SD card to expand their storage space if needed. Data saving, however, doesn’t reflect in their actions. We will need to re-evalutate if data saving can be an incentive for users to try out Zerda.</p>
+              <p>Our research team visited local residents in Indonesia for two weeks to do field studies and user testing. They put the prototype in front of the participants and see how they perceive this kind of new browsing experience. Through several contextual interviews and surveys, we learned that browsing speed is the most important thing to them. Another thing they care about is the app size due to the limited storage on their mobile phone. They will buy SD card to expand their storage space if needed. Data saving, however, doesn’t reflect in their actions. We will need to re-evalutate if data saving can be an incentive for users to try out Zerda.</p>
             </div>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-1.png', className: 'shadow'}}/>
