@@ -88,14 +88,14 @@ class TopicB extends Component {
             <hr className="mv5-ns mv4 o-30" />
             <article id="process" className="mw7 ph5-l ph0">
               <h2>Design Process</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
-              <p>Our lead UX designer Sevaan provided us some early wireframes as a starting point to discuss how we are going to visualize the interactions. The user flow seems simple, just uploading and downloading files, so we put our focus on how the interface can address the simpleness of uploading files, how to take care of some error cases, and how to help users make sense of the whole process so that they will be willing to trust the service.</p>
+              <p>Our user research team focused on trying to understand the problem space the experiment is intended to address during the early stage of this experiment. To help with the research, the UX team created early wireframes as a prototype to validate some hypothesis and learn from our users. This helps us determine how we are going to move forward with the UX, visual design and content strategy. Checkout the research report <a href="https://medium.com/firefox-test-pilot/gaining-insights-early-concept-evaluation-for-firefox-send-b6c576a4924b" target="_blank" rel="noopener noreferrer">here</a>.<br/><br/>The user flow seems simple. There's only uploading and downloading files, so we put our focus on how the interface can address the simpleness of transferring files. We also have to take care of some error cases and help users make sense of the whole process so that they will feel secure and be willing to trust the service.</p>
             </article>
             <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-6.png'}}/>
-              <p className="tc f12 o-60">Early wireframes to establish to user interactions.</p>
+              <p className="tc f12 o-60">Early wireframes to establish the user interactions.</p>
             </figure>
             <article className="mw7 ph5-l ph0">
-              <p>After establishing the UX spec with the team, we started several visual explorations on how the interface should look and behave. We also considered the responsive design for our interfaces since Firefox Send should work across all devices.</p>
+              <p>After establishing the UX spec with the team, we started several visual explorations on how the interface should look and behave. We also considered the responsive design for our interfaces since Firefox Send should work across all devices and all browsers.</p>
             </article>
             <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-4.png'}}/>
@@ -106,8 +106,8 @@ class TopicB extends Component {
               <p className="tc f12 o-60">Designing responsive interfaces.</p>
             </figure>
             <article id="final" className="mw7 ph5-l ph0">
-              <h2>Final Designs</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
-              <p>For the final design, we focused on clarifying the steps of uploading and downloading files, and also reduced the chances of people not knowing what to do on error pages. We made a lot effort into marking Firefox Send support all browsers and different operating systems, and also localized all the strings to support users in different countries (which requires us to rethink about some of the components because of the string length). Before releasing this experiment, I also jumped in to help push the pixels on the front-end part to make sure all the components have a consistent look and feel. Our visual designer did a really good job providing a clean and friendly looks for the interfaces!</p>
+              <h2>Final Design</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
+              <p>For the final design, we focused on clarifying the steps of uploading and downloading files, and also reduced the chances of people not knowing what to do on error pages. We made a lot effort into making Firefox Send support all browsers and different operating systems, and also localized all the strings to support users in different countries (which requires us to rethink about some of the components because of the string length). Before releasing this experiment, I also jumped in to help push the pixels on the front-end part to make sure all the components have a consistent look and feel. Our visual designer did an outstanding job providing a clean and friendly look for the interfaces!</p>
             </article>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-7.gif', className: 'shadow'}}/>
@@ -125,6 +125,9 @@ class TopicB extends Component {
               <ImageZoom image={{src: 'images/'+pageURL+'/image-0.png'}}/>
               <p className="tc f12 o-60">File expired if someone has already downloaded it.</p>
             </figure>
+            <section className={"bg-"+projectColor+"-1 pv4 mv5-ns mv4 full-width"}>
+              <p className="tc white">Try out Firefox Send here: <a href="https://send.firefox.com/" target="_blank" rel="noopener noreferrer" className={"db dib-ns tl-ns mw5 mv3 center tc br1 near-black button no-underline pointer f12 fw7 mr3-ns pa3 ba b--white bg-"+projectColor+"-1 hover-bg-"+projectColor+"-1 white"}>Launch Firefox Send</a></p>
+            </section>
             <div id="next" className="mw7 ph5-l ph0">
               <h2>What's Next</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
               <p>Since it's launch, we got lots of articles talking about Firefox Send. There's also a vast amount of feedback and over one thousand upvotes on <a href="https://www.producthunt.com/posts/send-by-firefox" target="_blank" rel="noopener noreferrer">Product Hunt</a>. To continue improving Firefox Send, we collected all the input and compiled into a feature backlog for us to understand what our users think. We then prioritized the feature requests and brought together our design team to sketch up some ideas. One of the most requested features is to add a password to your files, which will roll out soon!</p>

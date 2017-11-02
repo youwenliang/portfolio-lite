@@ -92,7 +92,7 @@ class TopicC extends Component {
             <hr className="mv5-ns mv4 o-30" />
             <div id="process" className="mw7 ph5-l ph0">
               <h2>Concepting</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
-              <p>During the concepting stage, our team came up with several themes around how to help users save cellular data. One of the ideas is to let users subscribe to their frequently visited websites. The browser will automatically download the contents of the subscribed websites when a user is using WiFi, and then the user will be able to view those websites offline without using cellular data.</p>
+              <p>During the concepting stage, our team came up with several themes around how to help users save cellular data since data is much harder to come by in Indonesia. One of the ideas is to let users subscribe to their frequently visited websites. The browser will automatically download the contents of the subscribed websites when a user is using WiFi, and then the user will be able to view those websites offline without using cellular data.</p>
             </div>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-2.png'}}/>
@@ -100,7 +100,7 @@ class TopicC extends Component {
             </figure>
             <div id="interactions" className="mw7 ph5-l ph0">
               <h2>User Tasks</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
-              <p>To validate our ideas, we need to learn from the users when they are interacting with the prototype. We listed out several key user flows to test if users can understand the concept, including a task to explain the onboarding information, a task to follow different websites, and a task to revisit the websites they followed.</p>
+              <p>To validate our ideas, we need to learn from the users while they are interacting with the prototype. We listed out several key user flows to test if users can understand the concept, including a task to explain the onboarding information, a task to follow different websites, and a task to revisit the websites they followed.</p>
               <figure className="mt5-ns mt4 mh0 hideme hidediv tc bg-white pv4">
                 <ImageZoom image={{src: 'images/'+pageURL+'/image-3.gif', className: 'shadow mobile'}}/>
               </figure>

@@ -104,7 +104,7 @@ class TopicA extends Component {
             </figure>
             <article id="process" className="mw7 ph5-l ph0">
               <h2>Design Process</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
-              <p>To prioritize the works, we started by re-evaluating how people thought of the features in Page Shot. Over a workshop, we learned that people perceive the click-and-capture as the most significate differentiator for the overall experience. We want to address the key features through the onboarding panel and make sure users can jump right into taking shots once that started.</p>
+              <p>To prioritize the works, we started by re-evaluating how people thought of the features in Page Shot. Over a workshop, we learned that people perceive the click-and-capture as the most significate differentiator for the overall experience. We want to address the key features through the onboarding panel and landing page, and make sure users can jump right into taking shots once that started.</p>
               <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
                 <ImageZoom image={{src: 'images/'+pageURL+'/image-0.png'}}/>
                 <p className="tc f12 o-60">Wireframes for landing page experience.</p>
@@ -151,11 +151,14 @@ class TopicA extends Component {
             </figure>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-5.png'}}/>
-              <p className="tc f12 o-60">A collection of images inside My Shots page.</p>
+              <p className="tc f12 o-60">My Shots page with your own collection of screenshots.</p>
             </figure>
+            <section className={"bg-"+projectColor+"-1 pv4 mv5-ns mv4 full-width"}>
+              <p className="tc white">Try out Firefox Screenshots here: <a href="https://screenshots.firefox.com/" target="_blank" rel="noopener noreferrer" className={"db dib-ns tl-ns mw5 mv3 center tc br1 near-black button no-underline pointer f12 fw7 mr3-ns pa3 ba b--white bg-"+projectColor+"-1 hover-bg-"+projectColor+"-1 white"}>Visit Firefox Screenshots</a></p>
+            </section>
             <div id="next" className="mw7 ph5-l ph0">
               <h2>What's Next</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
-              <p>We take our users feedback seriously. As we obtained more users to try Firefox Screenshots, we got lots of interesting requests to help improve the overall experiences. One example is to combine screenshots with Firefox Account, so that users can access their screenshots on a different device if they log in with an account. Another example is to let user annotate the shots they took. Stay tuned, and we will see more updates soon!</p>
+              <p>We take our users feedback seriously. As we obtained more users to try Firefox Screenshots, we got lots of interesting requests to help improve the overall experiences. One example is to combine screenshots with Firefox Account, so that users can access their screenshots on a different device if they log in with an account. Another example is to let user annotate the shots they took. Currently I'm leading the UX design for the new features, so stay tuned and we will see more updates soon!</p>
             </div>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-3.png'}}/>
