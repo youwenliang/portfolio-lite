@@ -122,6 +122,9 @@ class TopicC extends Component {
               </figure>
               <p className="tc f12 o-60 mb5-l mb4">Switching between Indonesian and English.</p>
             </div>
+            <section className={"bg-"+projectColor+"-1 pv4 mv5-ns mv4 full-width"}>
+              <p className="tc white">Try out the prototype here: <a className={"db dib-ns tl-ns mw5 mv3 center tc br1 near-black button no-underline pointer f12 fw7 mr3-ns pa3 ba b--white bg-"+projectColor+"-1 hover-bg-"+projectColor+"-1 white"} onClick={() => {this.popup('https://youwenliang.github.io/project-zerda/')}}>Launch Prototype</a></p>
+            </section>
             <div id="testing" className="mw7 ph5-l ph0">
               <h2>User Testing</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
               <p>Our research team visited local residents in Indonesia for two weeks to do field studies and user testing. They put the prototype in front of the participants and see how they perceive this kind of new browsing experience. Through several contextual interviews and surveys, we learned that browsing speed is the most important thing to them. Another thing they care about is the app size due to the limited storage on their mobile phone. They will buy SD card to expand their storage space if needed. Data saving, however, doesn’t reflect in their actions. We will need to re-evalutate if data saving can be an incentive for users to try out Zerda.</p>

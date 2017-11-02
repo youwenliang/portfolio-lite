@@ -78,7 +78,7 @@ class TopicA extends Component {
             <hr className={"dash bg-"+projectColor+"-1"} /><span className="f12 ttu ml3 fw7">{pageTitle}</span>
             <div id="intro" className="mw7 ph5-l ph0">
               <h1>Independent and personalizable Web experience on Smart TVs.</h1>
-              <p>Firefox OS TV provides a seamless Firefox web experience on a Smart TV platform, involving our community to build a optimized viewing experience. It is part of the effort to provide Firefox OS as an open platform choice for managing and controlling the broader range of connected devices available in the physical world. It was one of the most prominent projects running in the Mozilla Taipei office in 2015.</p>
+              <p>Firefox OS TV presents a seamless Firefox web experience on a Smart TV platform, collaborating with our community to build an optimized TV experience. It is part of the effort to provide Firefox OS as an open platform choice for managing and controlling the broader range of connected devices available in the physical world. It was one of the most prominent projects running in the Mozilla Taipei office in 2015.</p>
               <p className="o-40 fw5 f6">• Roles: Prototyper / Front-End Development<br/>• Skills: HTML/CSS, Javascript, User Testing</p>
               <div className="mt4 pt3">
                 <a href="https://youwenliang.github.io/people/mliang/Projects/FirefoxOS_TV-Prototype/" target="_blank" rel="noopener noreferrer" className={"db dib-ns tl-ns tc mb3 br1 near-black button no-underline f12 fw7 mr3-ns pa3 bg-"+projectColor+"-1 hover-bg-"+projectColor+"-1 white"}>Launch Prototype</a>
@@ -96,27 +96,30 @@ class TopicA extends Component {
             </figure>
             <div id="prototyping" className="mw7 ph5-l ph0">
               <h2>Prototyping</h2>
-              <p>Prototyping for Smart TV is a very different experience since we have to control all the interfaces without a mouse. I made a web-based prototype that is solely controlled by keyboard and can be installed on a TV to navigate with a remote control. Users have to perform several tasks with the prototype, including rearranging the apps on the screen, filtering the view to show specific apps, creating a folder, and moving an item into that folder. The goal here is to understand how to create a better way for users to customize and organize their home screen.</p>
+              <p>Prototyping for Smart TV is a very different experience since we have to control all the interfaces without a mouse. I made a web-based prototype that is solely controlled by keyboard and can be installed on a TV to navigate with a remote control. Users have to perform several tasks with the prototype, including rearranging the apps on the screen, filtering the view to show specific apps, creating a folder, and moving an item into that folder. The goal here is to understand how to create a better way for users to customize and organize their home screen. Here are some of the interactions we created:</p>
               <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
                 <ImageZoom image={{src: 'images/'+pageURL+'/image-1.gif', className: 'shadow'}}/>
-                <p className="tc f12 o-60">Rearranging the apps to customize your home screen. (GIF) Move TV to the third</p>
+                <p className="tc f12 o-60">Rearranging the apps to customize your home screen.</p>
               </figure>
               <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
                 <ImageZoom image={{src: 'images/'+pageURL+'/image-2.gif', className: 'shadow'}}/>
-                <p className="tc f12 o-60">Filtering the view to show specific apps. (GIF) Filter to Websites</p>
+                <p className="tc f12 o-60">Filtering the view to show specific apps.</p>
               </figure>
               <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
                 <ImageZoom image={{src: 'images/'+pageURL+'/image-3.gif', className: 'shadow'}}/>
-                <p className="tc f12 o-60">Creating a folder with selected apps. (GIF) Create a folder with three items</p>
+                <p className="tc f12 o-60">Creating a folder with selected apps.</p>
               </figure>
               <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
                 <ImageZoom image={{src: 'images/'+pageURL+'/image-4.gif', className: 'shadow'}}/>
-                <p className="tc f12 o-60">Moving an app inside your folder. (GIF) Move Items inside a folder</p>
+                <p className="tc f12 o-60">Moving an app inside your folder.</p>
               </figure>
             </div>
+            <section className={"bg-"+projectColor+"-1 pv4 mv5-ns mv4 full-width"}>
+              <p className="tc white">Try out the prototype here: <a href="https://youwenliang.github.io/people/mliang/Projects/FirefoxOS_TV-Prototype/" target="_blank" rel="noopener noreferrer" className={"db dib-ns tl-ns mw5 mv3 center tc br1 near-black button no-underline f12 fw7 mr3-ns pa3 ba b--white bg-"+projectColor+"-1 hover-bg-"+projectColor+"-1 white"}>Launch Prototype</a></p>
+            </section>
             <div id="final" className="mw7 ph5-l ph0">
-              <h2>What's Next</h2>
-              <p>In December 2015, Mozilla announced that it would no longer be developing the Firefox OS for the smartphone market. In consequence, there's also no more Firefox OS for Smart TVs. Since Firefox OS is an open-source project, Panasonic was able to develop its own "My Home Screen 2.0" based on the old OS. In a way, Firefox OS will continue live on in Panasonic’s 2017 TVs.</p>
+              <h2>The Results</h2>
+              <p>The bad news is, Mozilla announced that it would no longer be developing the Firefox OS for the smartphone market in December 2015. In consequence, there's also no more Firefox OS for Smart TVs. Since Firefox OS is an open-source project, Panasonic was still able to develop its own "My Home Screen 2.0" based on the old OS. In a way, Firefox OS will continue live on in Panasonic’s 2017 TVs.</p>
             </div>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-1.png', className: 'shadow'}}/>
