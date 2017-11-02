@@ -88,7 +88,7 @@ class TopicA extends Component {
             <hr className="mv5-ns mv4 o-30" />
             <div id="process" className="mw7 ph5-l ph0">
               <h2>The Challenge</h2>
-              <p>This was my first project when I joined Mozilla in 2015, at that time the user interface had already well developed and defined, so the role for me is to continue driving the UX of some new features and help prototype and iterate some ideas with our users. The challenge here is to build on top of an already well-received product and continue to innovate the details. Read more about the user interface design here: <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS_for_TV/User_interface_animation_design" target="_blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS_for_TV/User_interface_animation_design</a></p>
+              <p>This was my first project when I joined Mozilla in 2015, at that time the user interface had already well developed and defined, so the role for me is to continue driving the UX of some new features and help prototype and iterate some ideas with our users. The challenge here is to build on top of an already well-received product and continue to innovate the details. Read more about the user interface design <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS_for_TV/User_interface_animation_design" target="_blank" rel="noopener noreferrer">here</a>.</p>
             </div>
             <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-0.png'}}/>
