@@ -31,5 +31,5 @@
     "prestart": "npm run css",
     "prebuild": "npm run css"
   },
-  "homepage": "http://portfolio.youwenliang.com"
+  "homepage": "http://www.youwenliang.com/portfolio"
 }

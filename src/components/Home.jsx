@@ -14,10 +14,10 @@ class Home extends Component {
 
     /* Preload Image */
     var images  = [];
-    images.push('images/firefox-screenshots-cover.png');
-    images.push('images/firefox-send-cover.png');
-    images.push('images/project-zerda-cover.png');
-    images.push('images/firefoxos-tv-cover.png');
+    images.push('/portfolio/images/firefox-screenshots-cover.png');
+    images.push('/portfolio/images/firefox-send-cover.png');
+    images.push('/portfolio/images/project-zerda-cover.png');
+    images.push('/portfolio/images/firefoxos-tv-cover.png');
     loadImage(images)
     .then(function (allImgs) {
       document.getElementById('nav').classList.remove('white');

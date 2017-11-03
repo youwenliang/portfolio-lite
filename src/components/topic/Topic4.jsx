@@ -20,9 +20,9 @@ class TopicA extends Component {
     /* Preload Image */
     var images  = [];
     for(var i = 0; i < 2; i++)
-    images.push('/images/'+pageURL+'/image-'+i+'.png');
+    images.push('/portfolio/images/'+pageURL+'/image-'+i+'.png');
     for(var j = 1; i < 5; i++)
-    images.push('/images/'+pageURL+'/image-'+j+'.gif');
+    images.push('/portfolio/images/'+pageURL+'/image-'+j+'.gif');
     loadImage(images)
     .then(function (allImgs) {
       setTimeout(function(){        
