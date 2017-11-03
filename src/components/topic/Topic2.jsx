@@ -111,7 +111,7 @@ class TopicB extends Component {
             </article>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-7.gif', className: 'shadow'}}/>
-              <p className="tc f12 o-60">Dragging Files to upload.</p>
+              <p className="tc f12 o-60">Dragging files to upload.</p>
             </figure>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-8.gif', className: 'shadow'}}/>

@@ -62,6 +62,7 @@ class Home extends Component {
                   <div className="project-text absolute pa5-ns pa3">
                     <p className="white ttu tracked fw5">firefox screenshots / 2016-2017</p>
                     <h3 className="white ma0">Take, save, and share screenshots without leaving Firefox.</h3>
+                    <p className="white o-80 tracked fw5">UX Design • Front-End UI</p>
                   </div>
                 </div>
               </Link>
@@ -75,6 +76,7 @@ class Home extends Component {
                   <div className="project-text absolute pa5-ns pa3">
                     <p className="white ttu tracked fw5">firefox send / 2017</p>
                     <h3 className="white ma0">Upload and encrypt large files to share online with Firefox Send.</h3>
+                    <p className="white o-80 tracked fw5">UX Design • Front-End UI</p>
                   </div>
                 </div>
               </Link>
@@ -88,6 +90,7 @@ class Home extends Component {
                   <div className="project-text absolute pa5-ns pa3">
                     <p className="white ttu tracked fw5">project zerda / 2017</p>
                     <h3 className="white ma0">A lightweight and data saving browser for emerging markets.</h3>
+                    <p className="white o-80 tracked fw5">Prototyping • User Testing</p>
                   </div>
                 </div>
               </Link>
@@ -101,6 +104,7 @@ class Home extends Component {
                   <div className="project-text absolute pa5-ns pa3">
                     <p className="white ttu tracked fw5">firefoxos tv / 2015</p>
                     <h3 className="white ma0">Independent and personalizable Web experience on Smart TVs.</h3>
+                    <p className="white o-80 tracked fw5">Prototyping • User Testing</p>
                   </div>
                 </div>
               </Link>
