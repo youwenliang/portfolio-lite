@@ -1,0 +1,15 @@
+{
+  "short_name": "Mark Liang",
+  "name": "Mark Liang Portfolio Lite",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#0095FB",
+  "background_color": "#ffffff"
+}
