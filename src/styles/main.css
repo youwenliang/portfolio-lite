@@ -78,6 +78,10 @@ p {
   position: relative;
 }
 
+.ds {
+  overflow-y: hidden;
+}
+
 
 a {
   -moz-user-select: none;
