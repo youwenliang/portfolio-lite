@@ -21,8 +21,6 @@ class TopicC extends Component {
     var images  = [];
     for(var i = 0; i < 3; i++)
     images.push('/images/'+pageURL+'/image-'+i+'.png');
-    for(var j = 3; i < 8; i++)
-    images.push('/images/'+pageURL+'/image-'+j+'.gif');
     loadImage(images)
     .then(function (allImgs) {
       setTimeout(function(){        

@@ -72,9 +72,17 @@ p {
   max-width: 270px;
   max-height: 480px;
 }
+@media screen and (max-width: 1120px) {
+  .full-width {
+    width: 100vw;
+    left: -40px;
+    position: relative;
+  }  
+}
+
 .full-width {
-  width: calc(100% + 15rem);
-  left: -7.5rem;
+  width: 100vw;
+  left: calc(-1*(100vw - 1040px)/2);
   position: relative;
 }
 
