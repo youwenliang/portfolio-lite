@@ -18,6 +18,10 @@ body {
   overflow-x: hidden;
 }
 
+body.ds {
+  overflow: hidden;
+}
+
 h1 {
   line-height: 1.40625;
 }
