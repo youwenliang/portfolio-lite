@@ -5,9 +5,9 @@ import FontAwesome from 'react-fontawesome';
 import $ from 'jquery';
 import ImageZoom from 'react-medium-image-zoom';
 
-var pageURL = "firefoxos-tv";
-var pageTitle = "FirefoxOS TV";
-var projectColor = "red";
+var pageURL = "firefox-color";
+var pageTitle = "Firefox Color";
+var projectColor = "yellow";
 
 class TopicA extends Component {
   componentDidMount() {
@@ -19,8 +19,8 @@ class TopicA extends Component {
 
     /* Preload Image */
     var images  = [];
-    for(var i = 0; i < 2; i++)
-    images.push('/images/'+pageURL+'/image-'+i+'.png');
+    // for(var i = 0; i < 2; i++)
+    // images.push('/images/'+pageURL+'/image-'+i+'.png');
     loadImage(images)
     .then(function (allImgs) {
       setTimeout(function(){        
@@ -127,8 +127,8 @@ class TopicA extends Component {
         </section>
         <section className="mv2 pv4 hideme hidediv">
           <div className="center mw8 space-between ph4-ns ph3">
-            {this.more('Project Zerda', 'previous')}
-            {this.more('Screenshot Plus', 'next')}
+            {this.more('Screenshot Plus', 'previous')}
+            {this.more('Firefox Screenshots', 'next')}
           </div>
         </section>
       </div>

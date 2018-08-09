@@ -6,6 +6,8 @@ import Topic1 from './topic/Topic1';
 import Topic2 from './topic/Topic2';
 import Topic3 from './topic/Topic3';
 import Topic4 from './topic/Topic4';
+import Topic5 from './topic/Topic5';
+import Topic6 from './topic/Topic6';
 
 import $ from 'jquery';
 
@@ -40,6 +42,8 @@ class Main extends Component {
           <Route exact path='/firefox-send' component={Topic2} />
           <Route exact path='/project-zerda' component={Topic3} />
           <Route exact path='/firefoxos-tv' component={Topic4} />
+          <Route exact path='/firefox-color' component={Topic5} />
+          <Route exact path='/screenshot-plus' component={Topic6} />
           <Redirect from='*' to='/' />
         </Switch>
       </main>

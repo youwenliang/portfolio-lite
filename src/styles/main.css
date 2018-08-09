@@ -247,6 +247,26 @@ nav.white a {
 .hover-bg-green-1:hover {
   background-color: #017E9B;
 }
+.dark-green-1 {
+  color: #00BE9C;
+}
+.bg-dark-green-1 {
+  background-color: #00BE9C;
+}
+.hover-bg-dark-green-1:hover {
+  background-color: #00987D;
+}
+.yellow-1 {
+  color: #F7BC69;
+}
+.bg-yellow-1 {
+  background-color: #F7BC69;
+}
+.hover-bg-yellow-1:hover {
+  background-color: #C69754;
+}
+
+
 .fill-white {
   fill: white;
 }

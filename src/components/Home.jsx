@@ -53,6 +53,34 @@ class Home extends Component {
         </header>
         <section className="center mw8 ph4-ns ph3">
           <div className="cf hideme hidediv">
+           <div className="fl w-100 w-50-l pa2">
+              <Link to='/screenshot-plus'>
+                <div className="bg-dark-green-1 project relative">
+                  <figure className="ma0 project-image">
+                    <img src="images/firefox-screenshots-cover.png" alt="Screenshot Plus" />
+                  </figure>
+                  <div className="project-text absolute pa5-ns pa3">
+                    <p className="white ttu tracked fw5">screenshot plus / 2018</p>
+                    <h3 className="white ma0">Collect, organize and find screenshots that you want easily.</h3>
+                    <p className="white o-80 tracked fw5">UX Design • Prototyping • User Testing</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="fl w-100 w-50-l pa2">
+              <Link to='/firefox-color'>
+                <div className="bg-yellow-1 project relative">
+                  <figure className="ma0 project-image">
+                    <img src="images/firefox-screenshots-cover.png" alt="Firefox Color" />
+                  </figure>
+                  <div className="project-text absolute pa5-ns pa3">
+                    <p className="white ttu tracked fw5">firefox color / 2017-2018</p>
+                    <h3 className="white ma0">A simple tool for anyone to change the look of Firefox.</h3>
+                    <p className="white o-80 tracked fw5">UX Design • Front-End UI</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
             <div className="fl w-100 w-50-l pa2">
               <Link to='/firefox-screenshots'>
                 <div className="bg-green-1 project relative">
