@@ -5,6 +5,14 @@ import $ from 'jquery';
 import FontAwesome from 'react-fontawesome';
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      about: false
+    };
+    this.handler = this.handler.bind(this)
+  }
+
   componentDidMount() {
     console.log('Home');
     document.title = "Mark Liang - Interaction Designer";
@@ -44,12 +52,28 @@ class Home extends Component {
       console.info(err.loaded);
     });
   }
+
+  handler(e) {
+    e.preventDefault()
+    this.setState({about: false});
+    document.body.classList.remove('ds');
+    $('#about').addClass('fade');
+    $('#about').addClass('pn');
+  }
+
+  openAbout = () => {
+    this.setState({about: true});
+    $('#about').removeClass('fade');
+    $('#about').removeClass('pn');
+    document.body.classList.add('ds');
+  }
+
   render() {
     return (
       <div id="home">
         {/* Topics */}
         <header className="title align-center center mw8 ph4-ns ph3">
-          <h1 className="mw7 fw5 hideme hidediv ph2"><span className="lh-large">Hello, my name is Mark.</span><br /><span className="fw3"> I love crafting user experiences and bringing ideas to life with code, currently designing products and experiments at <a href="https://www.mozilla.org/" target="_blank" rel="noopener noreferrer" id="firefox" className="no-underline fw5 link near-black">Mozilla Firefox</a>.</span></h1>
+          <h1 className="mw7 fw5 hideme hidediv ph2"><span className="lh-large">Hello, my name is <span className="cp underlink relative" onClick={this.openAbout.bind(this)}>Mark</span>.</span><br /><span className="fw3"> I love crafting user experiences and bringing ideas to life with code, currently designing products and experiments at <a href="https://www.mozilla.org/" target="_blank" rel="noopener noreferrer" id="firefox" className="no-underline fw5 link near-black">Mozilla Firefox</a>.</span></h1>
         </header>
         <section className="center mw8 ph4-ns ph3">
           <div className="cf hideme hidediv">
@@ -57,11 +81,11 @@ class Home extends Component {
               <Link to='/screenshot-plus'>
                 <div className="bg-dark-green-1 project relative">
                   <figure className="ma0 project-image">
-                    <img src="images/firefox-screenshots-cover.png" alt="Screenshot Plus" />
+                    <img src="images/screenshot-plus-cover.png" alt="Screenshot Plus" />
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
                     <p className="white ttu tracked fw5">screenshot plus / 2018</p>
-                    <h3 className="white ma0">Organize and find screenshots on your mobile easily.</h3>
+                    <h3 className="white ma0">Collect, organize and find your mobile screenshots easily.</h3>
                     <p className="white o-80 tracked fw5">UX Design • Prototyping • User Testing</p>
                   </div>
                 </div>
@@ -71,7 +95,7 @@ class Home extends Component {
               <Link to='/firefox-color'>
                 <div className="bg-yellow-1 project relative">
                   <figure className="ma0 project-image">
-                    <img src="images/firefox-screenshots-cover.png" alt="Firefox Color" />
+                    <img src="images/firefox-color-cover.png" alt="Firefox Color" />
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
                     <p className="white ttu tracked fw5">firefox color / 2017-2018</p>
@@ -154,9 +178,38 @@ class Home extends Component {
                 <FontAwesome name='long-arrow-right' className="gold" />
             </h4>
         </section>
+        <About display={this.state.about} handler={this.handler}/>
       </div>
     );
   }
 }
 
 export default Home;
+
+class About extends Component {
+  render() {
+    let display = " fade";
+    return (
+      <section id="about" className={"w-100 pt6 bg-white z1 vh-100 top-center absolute"+display}>
+        <div className="mw8 center">
+        <div className="about-content mw8 title center ph4-ns ph3">
+          <h1 className="fw5 ph2-ns align-center">
+          <span className="f6 wh48 cp bg-near-white br-100 absolute" onClick={this.props.handler} ><FontAwesome name='long-arrow-left' /></span>
+          <span className="ml5 ph2-ns">About Mark</span>
+          </h1>
+          <div className="mw8 ml5">
+            <div className="cf ph2-ns">
+              <div className="fl w-100 w-60-l">
+                <h3 className="fw4 lh-copy f4-ns f5 ph2-ns">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer.</h3>
+                </div>
+                <div className="fl w-100 w-40-l">
+                <h3 className="ml5 fw4 lh-copy">test</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
+    )
+  }
+}

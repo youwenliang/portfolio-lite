@@ -28,7 +28,7 @@ class App extends Component {
             <div className="f6 link ph2"><FontAwesome name='envelope-o' className="mr1" />mliang@mozilla.com</div>
           </a>
         </nav>
-        <About/>
+        
         <Main/>
         <Footer/>
       </div>
@@ -37,16 +37,4 @@ class App extends Component {
 }
 
 export default App;
-
-class About extends Component {
-  render() {
-    return (
-      <section className="w-100 bg-white z1 vh-100 top-center absolute">
-        <div className="mw8 title align-center center ph4-ns ph3">
-          <h1 className="mw7 fw5 ph2">About Mark Liang</h1>
-        </div>
-      </section>
-    )
-  }
-}
 

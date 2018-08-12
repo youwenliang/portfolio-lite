@@ -242,6 +242,26 @@ nav.white a {
   margin: auto;
 }
 
+.cp {
+  cursor: pointer;
+}
+
+.underlink:after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: #000000;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.underlink:hover:after{
+  bottom: 0px;
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 .blue-1 {
   color: #0095FB;
 }
@@ -340,6 +360,14 @@ nav.white a {
   transition: opacity .8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+#about.fade {
+  opacity: 0;
+  transform: translateY(100%);
+  pointer-events: none;
+  transition: transform .4s cubic-bezier(0.23, 1, 0.32, 1), opacity .4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
 .hidediv {
   transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
   position: relative;
@@ -362,6 +390,15 @@ nav.white a {
   }
 }
 
+.wh48 {
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 ::selection {
   background: #00feff; /* WebKit/Blink Browsers */
   color: #000;
@@ -373,6 +410,22 @@ nav.white a {
 
 img {
   vertical-align: top;
+}
+
+#about,
+#about > div {
+  overflow: hidden;
+  transition: transform .6s cubic-bezier(0.23, 1, 0.32, 1), opacity .4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.about-content {
+  overflow-y: scroll;
+  height: calc(100vh - 8rem);
+  padding-bottom: 50px;
+}
+
+.overflow-scroll {
+  overflow-y: scroll;
 }
 
 .shadow {
