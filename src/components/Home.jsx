@@ -49,7 +49,7 @@ class Home extends Component {
       <div id="home">
         {/* Topics */}
         <header className="title align-center center mw8 ph4-ns ph3">
-          <h1 className="mw7 fw5 hideme hidediv ph2"><span className="lh-large">Hello, my name is Mark.</span><br /><span className="fw3"> I love crafting user experiences and bringing ideas to life with code, currently designing products and experiments at <a href="https://www.mozilla.org/" target="_blank" rel="noopener noreferrer" className="no-underline fw5 link near-black hover-gold">Mozilla Firefox</a>.</span></h1>
+          <h1 className="mw7 fw5 hideme hidediv ph2"><span className="lh-large">Hello, my name is Mark.</span><br /><span className="fw3"> I love crafting user experiences and bringing ideas to life with code, currently designing products and experiments at <a href="https://www.mozilla.org/" target="_blank" rel="noopener noreferrer" id="firefox" className="no-underline fw5 link near-black">Mozilla Firefox</a>.</span></h1>
         </header>
         <section className="center mw8 ph4-ns ph3">
           <div className="cf hideme hidediv">
@@ -61,7 +61,7 @@ class Home extends Component {
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
                     <p className="white ttu tracked fw5">screenshot plus / 2018</p>
-                    <h3 className="white ma0">Collect, organize and find screenshots that you want easily.</h3>
+                    <h3 className="white ma0">Organize and find screenshots on your mobile easily.</h3>
                     <p className="white o-80 tracked fw5">UX Design • Prototyping • User Testing</p>
                   </div>
                 </div>
@@ -82,15 +82,15 @@ class Home extends Component {
               </Link>
             </div>
             <div className="fl w-100 w-50-l pa2">
-              <Link to='/firefox-screenshots'>
-                <div className="bg-green-1 project relative">
+              <Link to='/project-zerda'>
+                <div className="bg-pink-1 project relative">
                   <figure className="ma0 project-image">
-                    <img src="images/firefox-screenshots-cover.png" alt="Firefox Screenshots" />
+                    <img src="images/project-zerda-cover.png" alt="Project Zerda" />
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
-                    <p className="white ttu tracked fw5">firefox screenshots / 2016-2017</p>
-                    <h3 className="white ma0">Take, save, and share screenshots without leaving Firefox.</h3>
-                    <p className="white o-80 tracked fw5">UX Design • Front-End UI</p>
+                    <p className="white ttu tracked fw5">project zerda / 2017</p>
+                    <h3 className="white ma0">A lightweight and data saving browser for emerging markets.</h3>
+                    <p className="white o-80 tracked fw5">Prototyping • User Testing</p>
                   </div>
                 </div>
               </Link>
@@ -110,15 +110,15 @@ class Home extends Component {
               </Link>
             </div>
             <div className="fl w-100 w-50-l pa2">
-              <Link to='/project-zerda'>
-                <div className="bg-pink-1 project relative">
+              <Link to='/firefox-screenshots'>
+                <div className="bg-green-1 project relative">
                   <figure className="ma0 project-image">
-                    <img src="images/project-zerda-cover.png" alt="Project Zerda" />
+                    <img src="images/firefox-screenshots-cover.png" alt="Firefox Screenshots" />
                   </figure>
                   <div className="project-text absolute pa5-ns pa3">
-                    <p className="white ttu tracked fw5">project zerda / 2017</p>
-                    <h3 className="white ma0">A lightweight and data saving browser for emerging markets.</h3>
-                    <p className="white o-80 tracked fw5">Prototyping • User Testing</p>
+                    <p className="white ttu tracked fw5">firefox screenshots / 2016-2017</p>
+                    <h3 className="white ma0">Take, save, and share screenshots without leaving Firefox.</h3>
+                    <p className="white o-80 tracked fw5">UX Design • Front-End UI</p>
                   </div>
                 </div>
               </Link>
@@ -140,13 +140,19 @@ class Home extends Component {
           </div>
         </section>
         <section className="mv2 pv4 hideme hidediv">
-          <a href="https://www.youwenliang.com/work" target="_blank" rel="noopener noreferrer" className="near-black no-underline hover-move">
-            <p className="ttu tracked f12 fw7 tc">MORE</p>
-            <h4 className="tc fw3 f4">View Past Works</h4>
+            <p className="ttu tracked f12 fw7 tc">VIEW MORE</p>
+            <div className="space-around center mw360">
+              <a href="https://www.youwenliang.com/work" target="_blank" rel="noopener noreferrer" className="near-black no-underline hover-move">
+                <h4 className="tc fw3 f4">Past Works</h4>
+              </a>
+              <p className="mh2 f4">/</p>
+              <a href="https://creative-lab.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="near-black no-underline hover-move">
+                <h4 className="tc fw3 f4">Side Projects</h4>
+              </a>
+            </div>
             <h4 className="tc">
                 <FontAwesome name='long-arrow-right' className="gold" />
             </h4>
-          </a>
         </section>
       </div>
     );

@@ -128,7 +128,7 @@ class TopicA extends Component {
         <section className="mv2 pv4 hideme hidediv">
           <div className="center mw8 space-between ph4-ns ph3">
             {this.more('Screenshot Plus', 'previous')}
-            {this.more('Firefox Screenshots', 'next')}
+            {this.more('Project Zerda', 'next')}
           </div>
         </section>
       </div>

@@ -20,7 +20,7 @@ class Footer extends Component {
               </svg>
             </div>
           </Link>
-          <div className="o-50 f6 ph2">©2017-2018 Design by Mark Liang.</div>
+          <div className="o-50 f6 ph2">©2017-2018 Design + Develop by Mark Liang.</div>
         </div>
       </footer>
     );

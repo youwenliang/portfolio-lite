@@ -143,8 +143,8 @@ class TopicC extends Component {
         </section>
         <section className="mv2 pv4 hideme hidediv">
           <div className="center mw8 space-between ph4-ns ph3">
-            {this.more('Firefox Send', 'previous')}
-            {this.more('FirefoxOS TV', 'next')}
+            {this.more('Firefox Color', 'previous')}
+            {this.more('Firefox Send', 'next')}
           </div>
         </section>
       </div>
