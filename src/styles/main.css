@@ -447,3 +447,28 @@ footer {
   opacity: 0;
   pointer-events: none;
 }
+
+#resume, #github, #codepen, #dribbble {
+  transition: all .6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#resume:hover {
+  color: #777 !important;
+  transform: translateX(20px);
+}
+
+#github:hover {
+  color: #3F4347 !important;
+  transform: translateX(20px);
+}
+
+#codepen:hover {
+  color: #0EBEFF !important;
+  transform: translateX(20px);
+}
+
+#dribbble:hover {
+  color: #EA4C89 !important;
+  transform: translateX(20px);
+}
+

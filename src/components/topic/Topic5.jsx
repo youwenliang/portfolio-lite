@@ -75,53 +75,60 @@ class TopicA extends Component {
           <div className="mt5-ns mt4 ph2">
             <hr className={"dash bg-"+projectColor+"-1"} /><span className="f12 ttu ml3 fw7">{pageTitle}</span>
             <div id="intro" className="mw7 ph5-l ph0">
-              <h1>Independent and personalizable Web experience on Smart TVs.</h1>
-              <p>Firefox OS TV presents a seamless Firefox web experience on a Smart TV platform, collaborating with our community to build an optimized TV experience. It is part of the effort to provide Firefox OS as an open platform choice for managing and controlling the broader range of connected devices available in the physical world. It was one of the most prominent projects running in the Mozilla Taipei office in 2015.</p>
-              <p className="o-40 fw5 f6">• Roles: Prototyper / Front-End Development<br/>• Skills: HTML/CSS, Javascript, User Testing</p>
+              <h1>A simple tool for anyone to change the look of Firefox.</h1>
+              <p>Firefox Color lets you customize the look and feel of Firefox. You can change the tab color, background color, toolbar color and more, to create your own theme. You can also share your creations with your friends, or save them for yourself. It is a Test Pilot experiment that emphasis on enabling users to create their own Firefox experiences with customization.</p>
+              <p className="o-40 fw5 f6">• Roles: UX Designer<br/>• Skills: Sketch, InVision</p>
               <div className="mt4 pt3">
-                <a href="https://youwenliang.github.io/people/mliang/Projects/FirefoxOS_TV-Prototype/" target="_blank" rel="noopener noreferrer" className={"db dib-ns tl-ns tc mb3 br1 near-black button no-underline f12 fw7 mr3-ns pa3 bg-"+projectColor+"-1 hover-bg-"+projectColor+"-1 white"}>Launch Prototype</a>
-                <a href="https://github.com/youwenliang/FirefoxOS_TV-Prototype" target="_blank" rel="noopener noreferrer" className="db dib-ns tl-ns tc mb3 br1 near-black button no-underline f12 fw7 pa3 bg-moon-gray bg-animate hover-bg-light-silver">View Project on Github</a>
+                <a href="https://color.firefox.com/" target="_blank" rel="noopener noreferrer" className={"db dib-ns tl-ns tc mb3 br1 near-black button no-underline f12 fw7 mr3-ns pa3 bg-"+projectColor+"-1 hover-bg-"+projectColor+"-1 white"}>Launch Website</a>
+                <a href="https://testpilot.firefox.com/experiments/color" target="_blank" rel="noopener noreferrer" className="db dib-ns tl-ns tc mb3 br1 near-black button no-underline f12 fw7 pa3 bg-moon-gray bg-animate hover-bg-light-silver">Visit Experiment Page</a>
               </div>
             </div>
             <hr className="mv5-ns mv4 o-30" />
-            <div id="process" className="mw7 ph5-l ph0">
-              <h2>The Challenge</h2>
-              <p>This was my first project when I joined Mozilla in 2015, at that time the user interface had already well developed and defined, so the role for me is to continue driving the UX of some new features and help prototype and iterate some ideas with our users. The challenge here is to build on top of an already well-received product and continue to innovate the details. Read more about the user interface design <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS_for_TV/User_interface_animation_design" target="_blank" rel="noopener noreferrer">here</a>.</p>
-            </div>
+            <article id="process" className="mw7 ph5-l ph0">
+              <h2>Design Process</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
+              <p>We started with a <a href="https://addons.mozilla.org/en-US/firefox/addon/themr/" target="_blank" rel="noopener noreferrer">prototype (Themr)</a> our project manager John Gruen created to test out the idea of customizing the colors of Firefox components. After trying out the prototype, we started sketching out ideas to create a more intuitive tool for users to use. One of the issues we saw is that people don't know what they are customizing based on the components name, such as "Background Tab Text Color", so we want to make the preview of the Firefox browser interactive. Users can click on the parts directly if they want to change the colors.</p>
+            </article>
             <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
               <ImageZoom image={{src: 'images/'+pageURL+'/image-0.png'}}/>
-              <p className="tc f12 o-60">Wireframes for the ideas about organizing homescreen with folders.</p>
+              <p className="tc f12 o-60">Themr addon's interface</p>
             </figure>
-            <div id="prototyping" className="mw7 ph5-l ph0">
-              <h2>Prototyping</h2>
-              <p>Prototyping for Smart TV is a very different experience since we have to control all the interfaces without a mouse. I made a web-based prototype that is solely controlled by keyboard and can be installed on a TV to navigate with a remote control. Users have to perform several tasks with the prototype, including rearranging the apps on the screen, filtering the view to show specific apps, creating a folder, and moving an item into that folder. The goal here is to understand how to create a better way for users to customize and organize their home screen. Here are some of the interactions we created:</p>
-              <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
-                <ImageZoom image={{src: 'images/'+pageURL+'/image-1.gif', className: 'shadow'}}/>
-                <p className="tc f12 o-60">Rearranging the apps to customize your home screen.</p>
-              </figure>
-              <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
-                <ImageZoom image={{src: 'images/'+pageURL+'/image-2.gif', className: 'shadow'}}/>
-                <p className="tc f12 o-60">Filtering the view to show specific apps.</p>
-              </figure>
-              <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
-                <ImageZoom image={{src: 'images/'+pageURL+'/image-3.gif', className: 'shadow'}}/>
-                <p className="tc f12 o-60">Creating a folder with selected apps.</p>
-              </figure>
-              <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
-                <ImageZoom image={{src: 'images/'+pageURL+'/image-4.gif', className: 'shadow'}}/>
-                <p className="tc f12 o-60">Moving an app inside your folder.</p>
-              </figure>
-            </div>
+            <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-1.png'}}/>
+              <p className="tc f12 o-60">Early wireframes to establish the user interactions.</p>
+            </figure>
+            <article className="mw7 ph5-l ph0">
+              <p>We made several adjustments with the UX spec, and at the same time started several visual explorations on how the interface should look and behave. One of the core value of this project is to make it a fun tool for users to play with, so we wanted to make it less tool-like and more visually intriguing. We tested out adding gradient background color on the interface based on the colors users select, and we also added some "preset" themes for people to choose from if they don't want to create their own.</p>
+            </article>
+            <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-2.png'}}/>
+              <p className="tc f12 o-60">UX spec iterations.</p>
+            </figure>
+            <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-3.png'}}/>
+              <p className="tc f12 o-60">Exploring different visual ideas.</p>
+            </figure>
+            <article id="final" className="mw7 ph5-l ph0">
+              <h2>Final Design</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
+              <p>After working closely with the engineers about additional functionalities such as "Reset", "Undo" and "Save", we delivered our design with a clear list of components users can customize, and an interactive preview section where users can click and select color. Since Firefox Color is a tool for Firefox users only, it's reasonable to promote Firefox Browser if a user accesses this tool from other browsers. Ideally with more people creating and sharing their themes, we could at the same time gain more users to try out Firefox!</p>
+            </article>
+            <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-4.gif', className: 'shadow'}}/>
+              <p className="tc f12 o-60">Changing Colors.</p>
+            </figure>
+            <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-5.gif', className: 'shadow'}}/>
+              <p className="tc f12 o-60">Applying preset themes.</p>
+            </figure>
             <section className={"bg-"+projectColor+"-1 pv4 mv5-ns mv4 full-width"}>
-              <p className="tc white">Try out the prototype here: <a href="https://youwenliang.github.io/people/mliang/Projects/FirefoxOS_TV-Prototype/" target="_blank" rel="noopener noreferrer" className={"db dib-ns tl-ns mw5 mv3 center tc br1 near-black button no-underline f12 fw7 mr3-ns pa3 ba b--white bg-"+projectColor+"-1 hover-bg-"+projectColor+"-1 white"}>Launch Prototype</a></p>
+              <p className="tc white">Try out Firefox Color here: <a href="https://color.firefox.com/" target="_blank" rel="noopener noreferrer" className={"db dib-ns tl-ns mw5 mv3 center tc br1 near-black button no-underline pointer f12 fw7 mr3-ns pa3 ba b--white bg-"+projectColor+"-1 hover-bg-"+projectColor+"-1 white"}>Launch Firefox Color</a></p>
             </section>
-            <div id="final" className="mw7 ph5-l ph0">
-              <h2>The Results</h2>
-              <p>The bad news is, Mozilla announced that it would no longer be developing the Firefox OS for the smartphone market in December 2015. In consequence, there's also no more Firefox OS for Smart TVs. Since Firefox OS is an open-source project, Panasonic was still able to develop its own "My Home Screen 2.0" based on the old OS. In a way, Firefox OS will continue live on in Panasonic’s 2017 TVs.</p>
+            <div id="next" className="mw7 ph5-l ph0">
+              <h2>What's Next</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
+              <p>Firefox Color received lots of feedback since its launch, and the team also made some major changes to the interface to make it more visual on how to interact with the tool. For the next steps, we want to integrate Firefox Color with the existing customization settings and theme related addons to make it the one true place for people to change their browser's appearance. Hopefully in the future, all the Firefox new users will recognize Firefox Color as a built-in feature on Firefox.</p>
             </div>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
-              <ImageZoom image={{src: 'images/'+pageURL+'/image-1.png', className: 'shadow'}}/>
-              <p className="tc f12 o-60">Panasonic's "My Home Screen 2.0".</p>
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-6.gif', className: 'shadow'}}/>
+              <p className="tc f12 o-60">Firefox Color latest interactive interface.</p>
             </figure>
           </div>
         </section>

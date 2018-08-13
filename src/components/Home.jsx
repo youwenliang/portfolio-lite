@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import loadImage from 'image-promise';
 import $ from 'jquery';
 import FontAwesome from 'react-fontawesome';
+import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 
 class Home extends Component {
   constructor(props) {
@@ -63,6 +64,7 @@ class Home extends Component {
 
   openAbout = () => {
     this.setState({about: true});
+    $(document).scrollTop(0);
     $('#about').removeClass('fade');
     $('#about').removeClass('pn');
     document.body.classList.add('ds');
@@ -194,16 +196,33 @@ class About extends Component {
         <div className="mw8 center">
         <div className="about-content mw8 title center ph4-ns ph3">
           <h1 className="fw5 ph2-ns align-center">
-          <span className="f6 wh48 cp bg-near-white br-100 absolute" onClick={this.props.handler} ><FontAwesome name='long-arrow-left' /></span>
+          <span className="f6 wh48 cp bg-near-white br-100 absolute bg-animate hover-bg-moon-gray" onClick={this.props.handler} ><FontAwesome name='long-arrow-left' /></span>
           <span className="ml5 ph2-ns">About Mark</span>
           </h1>
           <div className="mw8 ml5">
             <div className="cf ph2-ns">
               <div className="fl w-100 w-60-l">
-                <h3 className="fw4 lh-copy f4-ns f5 ph2-ns">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer.</h3>
+                <h3 className="fw3 lh-copy f4-ns f5 ph2-ns mt0">I am is a designer, engineer, and maker that crafts digital and physical experiences with new technologies. Previously, I was working as a Creative Technologist at AKQA San Francisco office, pitching and executing ideas for brands such as Google, Nike Jordan, DirecTV and Nest.
+<br/><br/>
+My work is informed by my previous study as an electrical engineering student tackling new possibilities in the digital and physical realm. My specialty in user experience, coupled with the ability to write code and build prototypes helped me facilitate the launch of several Firefox Testpilot experiments, such as Firefox Screenshots and Firefox Send.
+<br/><br/>
+I have a Masters degree in Interaction Design from California College of the Arts (CCA), and have a Bachelor of Science in Engineering from National Taiwan University.
+I have lived and worked in San Francisco and now resides in Taipei, Taiwan.</h3>
                 </div>
-                <div className="fl w-100 w-40-l">
-                <h3 className="ml5 fw4 lh-copy">test</h3>
+                <div className="fl w-100 w-40-l pl4-ns">
+                <img className="br2 mb3" src="https://avatars3.githubusercontent.com/u/8919308?s=460&v=4" width="240" height="240"/>
+                <a href="https://youwenliang.com/You-Wen-Liang-Resume.pdf" target="_blank"  rel="noopener noreferrer" className="no-underline near-black">
+                  <div id="resume" className="f4 link ph2 mv3"><FontAwesome name='paperclip' className="mr1" />My Resume</div>
+                </a>
+                <a href="https://github.com/youwenliang" target="_blank"  rel="noopener noreferrer" className="no-underline near-black">
+                  <div id="github" className="f4 link ph2 mv3"><FontAwesome name='github' className="mr1" />Github</div>
+                </a>
+                <a href="https://codepen.io/youwenliang/" target="_blank"  rel="noopener noreferrer" className="no-underline near-black">
+                  <div id="codepen" className="f4 link ph2 mv3"><FontAwesome name='codepen' className="mr1" />Codepen</div>
+                </a>
+                <a href="https://dribbble.com/youwenliang" target="_blank"  rel="noopener noreferrer" className="no-underline near-black">
+                  <div id="dribbble" className="f4 link ph2 mv3"><FontAwesome name='dribbble' className="mr1" />Dribbble</div>
+                </a>
                 </div>
               </div>
             </div>
