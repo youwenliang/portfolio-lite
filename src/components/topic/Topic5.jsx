@@ -87,15 +87,15 @@ class TopicA extends Component {
             <article id="process" className="mw7 ph5-l ph0">
               <h2>Design Process</h2><hr className={"dash bg-"+projectColor+"-1"} /><br/>
               <p>We started with a <a href="https://addons.mozilla.org/en-US/firefox/addon/themr/" target="_blank" rel="noopener noreferrer">prototype (Themr)</a> our project manager John Gruen created to test out the idea of customizing the colors of Firefox components. After trying out the prototype, we started sketching out ideas to create a more intuitive tool for users to use. One of the issues we saw is that people don't know what they are customizing based on the components name, such as "Background Tab Text Color", so we want to make the preview of the Firefox browser interactive. Users can click on the parts directly if they want to change the colors.</p>
+              <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
+                <ImageZoom image={{src: 'images/'+pageURL+'/image-0.png'}}/>
+                <p className="tc f12 o-60">Themr addon's interface</p>
+              </figure>
+              <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
+                <ImageZoom image={{src: 'images/'+pageURL+'/image-1.png'}}/>
+                <p className="tc f12 o-60">Early wireframes to establish the user interactions.</p>
+              </figure>
             </article>
-            <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
-              <ImageZoom image={{src: 'images/'+pageURL+'/image-0.png'}}/>
-              <p className="tc f12 o-60">Themr addon's interface</p>
-            </figure>
-            <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
-              <ImageZoom image={{src: 'images/'+pageURL+'/image-1.png'}}/>
-              <p className="tc f12 o-60">Early wireframes to establish the user interactions.</p>
-            </figure>
             <article className="mw7 ph5-l ph0">
               <p>We made several adjustments with the UX spec, and at the same time started several visual explorations on how the interface should look and behave. One of the core value of this project is to make it a fun tool for users to play with, so we wanted to make it less tool-like and more visually intriguing. We tested out adding gradient background color on the interface based on the colors users select, and we also added some "preset" themes for people to choose from if they don't want to create their own.</p>
             </article>
@@ -112,11 +112,11 @@ class TopicA extends Component {
               <p>After working closely with the engineers about additional functionalities such as "Reset", "Undo" and "Save", we delivered our design with a clear list of components users can customize, and an interactive preview section where users can click and select color. Since Firefox Color is a tool for Firefox users only, it's reasonable to promote Firefox Browser if a user accesses this tool from other browsers. Ideally with more people creating and sharing their themes, we could at the same time gain more users to try out Firefox!</p>
             </article>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
-              <ImageZoom image={{src: 'images/'+pageURL+'/image-4.gif', className: 'shadow'}}/>
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-5.gif', className: 'shadow'}}/>
               <p className="tc f12 o-60">Changing Colors.</p>
             </figure>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
-              <ImageZoom image={{src: 'images/'+pageURL+'/image-5.gif', className: 'shadow'}}/>
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-6.gif', className: 'shadow'}}/>
               <p className="tc f12 o-60">Applying preset themes.</p>
             </figure>
             <section className={"bg-"+projectColor+"-1 pv4 mv5-ns mv4 full-width"}>
@@ -127,7 +127,7 @@ class TopicA extends Component {
               <p>Firefox Color received lots of feedback since its launch, and the team also made some major changes to the interface to make it more visual on how to interact with the tool. For the next steps, we want to integrate Firefox Color with the existing customization settings and theme related addons to make it the one true place for people to change their browser's appearance. Hopefully in the future, all the Firefox new users will recognize Firefox Color as a built-in feature on Firefox.</p>
             </div>
             <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
-              <ImageZoom image={{src: 'images/'+pageURL+'/image-6.gif', className: 'shadow'}}/>
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-4.gif', className: 'shadow'}}/>
               <p className="tc f12 o-60">Firefox Color latest interactive interface.</p>
             </figure>
           </div>

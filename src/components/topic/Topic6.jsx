@@ -87,16 +87,12 @@ class TopicA extends Component {
               <p>Our team in Taipei wanted to start an idea around online shopping in Asia market. We had our previous research reports about Indonesia market so we asked ourselves what we can do to create a better online shopping experiences for them. We started by mapping out the user journey of a typical shopping experience, and see if there's anything we can tackle. After sending out surveys and several rounds of desk research, we decided to look into the idea of "Online Wishlist" and started our high-level concept storyboarding.</p>
             </div>
             <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
-              <ImageZoom image={{src: 'images/'+pageURL+'/image-0.png'}}/>
-              <p className="tc f12 o-60">Shopping User Journey.</p>
-            </figure>
-            <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv ph5-l ph0">
-              <ImageZoom image={{src: 'images/'+pageURL+'/image-0.png'}}/>
-              <p className="tc f12 o-60">Deciding concept direction.</p>
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-6.png'}}/>
+              <p className="tc f12 o-60">Research study in Indonesia.</p>
             </figure>
             <div id="research" className="mw7 ph5-l ph0">
               <h2>Design Process</h2>
-              <p>We came up with three concepts around "Wishlist", including organized wishlist, smart wishlist, and social wishlist. We created concept storyboards for those ideas and sent them out to an online survey. We found that people are more interested in organizing their wishlists so that they can clearly see what they have saved and what they have bought. One of the findings from our previous surveys is that people use screenshots a lot on their mobile devices, not only capturing the products they love but also capturing things like chat history, bank transfer confirmation, etc.. <br/><br/>With the survey results and our team discussions, we decided to focus on helping people organize their screenshots, and using OCR to detect keywords on the screenshots so they can be searchable. With the text information on the screenshots, we could also direct users to find more information about their screenshots on the internet. For example, if a user screenshot a pair of shoes on an e-commerce site, we can detect the text on the screenshot and potentially bring that user back to that e-commerce site for further actions. </p>
+              <p>We came up with three concepts around "Wishlist", including organized wishlist, smart wishlist, and social wishlist. We created concept storyboards for those ideas and sent them out to an online survey. We found that people are more interested in organizing their wishlists so that they can clearly see what they have saved and what they have bought. One of the findings from our previous surveys is that people use screenshots a lot on their mobile devices, not only capturing the products they love but also capturing things like chat history, bank transfer confirmation, etc.. <br/>
               <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
                 <ImageZoom image={{src: 'images/'+pageURL+'/image-1.png'}}/>
                 <p className="tc f12 o-60">Our storyboards.</p>
@@ -105,16 +101,17 @@ class TopicA extends Component {
                 <ImageZoom image={{src: 'images/'+pageURL+'/image-4.png'}}/>
                 <p className="tc f12 o-60">Team up with engineers to discuss concept.</p>
               </figure>
-              <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
-                <ImageZoom image={{src: 'images/'+pageURL+'/image-5.png'}}/>
-                <p className="tc f12 o-60">Our initial product concept.</p>
-              </figure>
+              <br/>With the survey results and our team discussions, we decided to focus on helping people organize their screenshots, and using OCR to detect keywords on the screenshots so they can be searchable. With the text information on the screenshots, we could also direct users to find more information about their screenshots on the internet. We called it "Live Screenshot". For example, if a user screenshot a pair of shoes on an e-commerce site, we can detect the text on the screenshot and potentially bring that user back to that e-commerce site for further actions. </p>
             </div>
+            <figure className="mv5-ns mv4 mh0 hideme hidediv ph5-l ph0">
+              <ImageZoom image={{src: 'images/'+pageURL+'/image-5.png'}}/>
+              <p className="tc f12 o-60">Our initial product concept.</p>
+            </figure>
             <div id="process" className="mw7 ph5-l ph0">
               <h2>User Testing Trip</h2>
               <p>After refining the concept with our designers and engineers, we started the prototyping process so that we can test the idea with real users. As our team's prototyper, I use Framer to create an interactive prototype where users can add collections for their screenshots, and also pretend to screenshot an item they like on a website. With the finalized prototype, our team flew to Jakarta to meet with the locals we recruited for user testing. We spent a week interviewing eight users, and at the same time iterating our prototype. (At that time we called our app "Wishot")
 
-              <br/><br/>The whole trip was very inspiring for our design team, and we've learned so much about our users, much more than our desk research. We had better ideas on how they use their mobile devices and their daily activities that involve screenshots. We also learned that data plans, internet speed, and mobile device storage could be an important factor that changes their mobile behaviors.</p>
+              <br/><br/>The whole trip was very inspiring for our design team, and we've learned so much about our users, much more than our desk research. We had better ideas on how they use their mobile devices and their daily activities that involve screenshots. We also learned that data plans, internet speed, and mobile device storage could be important factors that change their mobile behaviors.</p>
               <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
                 <ImageZoom image={{src: 'images/'+pageURL+'/image-2.png'}}/>
                 <p className="tc f12 o-60">User testing sessions with our participants.</p>
@@ -124,11 +121,11 @@ class TopicA extends Component {
                 <p className="tc f12 o-60">User testing sessions with our participants.</p>
               </figure>
               <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
-                <ImageZoom image={{src: 'images/'+pageURL+'/image-1.gif', className: 'shadow'}}/>
+                <ImageZoom image={{src: 'images/'+pageURL+'/image-7.gif', className: 'shadow'}}/>
                 <p className="tc f12 o-60">Screenshot and add to collection.</p>
               </figure>
               <figure className="mt4 mb5-ns mb4 mh0 hideme hidediv">
-                <ImageZoom image={{src: 'images/'+pageURL+'/image-2.gif', className: 'shadow'}}/>
+                <ImageZoom image={{src: 'images/'+pageURL+'/image-8.gif', className: 'shadow'}}/>
                 <p className="tc f12 o-60">View your recent screenshots.</p>
               </figure>
             </div>

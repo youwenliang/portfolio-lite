@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import loadImage from 'image-promise';
 import $ from 'jquery';
 import FontAwesome from 'react-fontawesome';
-import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 
 class Home extends Component {
   constructor(props) {
@@ -64,7 +63,6 @@ class Home extends Component {
 
   openAbout = () => {
     this.setState({about: true});
-    $(document).scrollTop(0);
     $('#about').removeClass('fade');
     $('#about').removeClass('pn');
     document.body.classList.add('ds');
@@ -192,7 +190,7 @@ class About extends Component {
   render() {
     let display = " fade";
     return (
-      <section id="about" className={"w-100 pt6 bg-white z1 vh-100 top-center absolute"+display}>
+      <section id="about" className={"w-100 bg-white z1 vh-100 top-center fixed z100"+display}>
         <div className="mw8 center">
         <div className="about-content mw8 title center ph4-ns ph3">
           <h1 className="fw5 ph2-ns align-center">
@@ -202,15 +200,13 @@ class About extends Component {
           <div className="mw8 ml5">
             <div className="cf ph2-ns">
               <div className="fl w-100 w-60-l">
-                <h3 className="fw3 lh-copy f4-ns f5 ph2-ns mt0">I am is a designer, engineer, and maker that crafts digital and physical experiences with new technologies. Previously, I was working as a Creative Technologist at AKQA San Francisco office, pitching and executing ideas for brands such as Google, Nike Jordan, DirecTV and Nest.
-<br/><br/>
-My work is informed by my previous study as an electrical engineering student tackling new possibilities in the digital and physical realm. My specialty in user experience, coupled with the ability to write code and build prototypes helped me facilitate the launch of several Firefox Testpilot experiments, such as Firefox Screenshots and Firefox Send.
-<br/><br/>
-I have a Masters degree in Interaction Design from California College of the Arts (CCA), and have a Bachelor of Science in Engineering from National Taiwan University.
-I have lived and worked in San Francisco and now resides in Taipei, Taiwan.</h3>
+                <h3 className="fw3 lh-copy f4-ns f5 ph2-ns mt0"><span className="fw4 f3">I am a UX designer by profession and creative coder by heart.</span> <br/><br/>Being able to not only visualize the ideas in my head but also get into building ideas that people love is my biggest passion. My work is informed by my previous study as an electrical engineering student tackling new possibilities in the digital and physical realm. My specialty in user experience, coupled with the ability to write code and build prototypes helped me facilitate the launch of several Firefox Testpilot experiments, such as <a href="https://screenshots.firefox.com/" target="_blank" className="fw5 blue">Firefox Screenshots</a> and <a href="https://send.firefox.com/" target="_blank" className="fw5 blue">Firefox Send</a>.
+                  <br/><br/>
+                  I have a Masters degree in Interaction Design from <a href="https://www.cca.edu/" target="_blank" className="fw5 blue">California College of the Arts (CCA)</a>, and have a Bachelor of Science in Engineering from National Taiwan University.
+                  I have lived and worked in San Francisco and now resides in Taipei, Taiwan.</h3>
                 </div>
                 <div className="fl w-100 w-40-l pl4-ns">
-                <img className="br2 mb3" src="https://avatars3.githubusercontent.com/u/8919308?s=460&v=4" width="240" height="240"/>
+                <img className="br2 mb3" src="https://avatars3.githubusercontent.com/u/8919308?s=460&v=4" width="240" height="240" alt="Mark Liang"/>
                 <a href="https://youwenliang.com/You-Wen-Liang-Resume.pdf" target="_blank"  rel="noopener noreferrer" className="no-underline near-black">
                   <div id="resume" className="f4 link ph2 mv3"><FontAwesome name='paperclip' className="mr1" />My Resume</div>
                 </a>
